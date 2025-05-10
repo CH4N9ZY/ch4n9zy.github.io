@@ -62,19 +62,19 @@
     <p>
       {% if post.paperurl %}
         [<a href="{{ post.paperurl }}" target="_blank"><b>Download Paper</b></a>]
-      {% else %}
+      {% elif post.papercoming %}
         [<a>Paper Coming Soon</a>]
       {% endif %}
 
       {% if post.suppurl %}
         [<a href="{{ post.suppurl }}" target="_blank"><b>Download Supplementary Material</b></a>]
-      {% else %}
+      {% elif post.suppcoming %}
         [<a>Supplementary Material Coming Soon</a>]
       {% endif %}
 
       {% if post.videourl %}
         [<a href="{{ post.videourl }}" target="_blank"><b>YouTube Video</b></a>]
-      {% else %}
+      {% elif post.videocoming %}
         [<a>Video Coming Soon</a>]
       {% endif %}
       <!-- {% if post.videourl %}

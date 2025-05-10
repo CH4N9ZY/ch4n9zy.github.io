@@ -8,7 +8,8 @@ date: 2025-08-10
 venue: 'SIGGRAPH’25'
 paperurl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis.pdf'
 suppurl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis_supp.pdf'
-videourl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis.mp4'
+videocoming: True
+# videourl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis.mp4'
 # bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 citation: 'Ziyi Chang, He Wang, George Koulieris, and Hubert P. H. Shum. 2025. Large-Scale Multi-Character Interaction Synthesis. In Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers (SIGGRAPH Conference Papers ’25), August 10–14, 2025, Vancouver, BC, Canada. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3721238.3730750'
