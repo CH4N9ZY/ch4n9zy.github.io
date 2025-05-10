@@ -1,0 +1,166 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if include.type == "grid" and teaser %}
+      <div class="archive__item-teaser">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+      {% else %}
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
+    </h2>
+    
+    {% if post.read_time %}
+      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+
+        {% if post.collection == 'teaching' %}
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' %}
+          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.date %}
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+
+    {% if post.excerpt and site.read_more != 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><b>Keywords</b>: {{ post.excerpt }}</p>
+    <!-- <p class="archive__item-excerpt" itemprop="description"><b>Keywords</b>: {{ post.excerpt | markdownify }}</p> -->
+    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    <p class="archive__item-excerpt" itemprop="description"><p> {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+    {% endif %}
+    
+    {% if post.image %}
+      <div>
+        <img src="{{ post.image }}" alt="{{ post.title }}" />
+      </div>
+    {% endif %}
+
+    <p>
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" download="paper.pdf">Download Paper</a> | {% endif %}
+
+      {% if post.suppurl %}<a href="{{ post.suppurl }}" download="supp.pdf">Download Supplementary Material</a> | {% endif %}
+
+      {% if post.videourl %}<a href="{{ post.videourl }}" download="video.mp4">Download Video</a> | {% endif %}
+      <!-- {% if post.videourl %}
+        <button id="downloadBtn">Download Video</button>
+        <script>
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+          fetch('files/Unifying_Human_Motion_Synthesis_and_Style_Transfer_with_Denoising_Diffusion_Probabilistic_Models.mp4')
+            .then(response => {
+              if (!response.ok) throw new Error('Network response was not ok');
+              return response.blob();
+            })
+            .then(blob => {
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = 'video.mp4';   // 保存时的文件名
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+              URL.revokeObjectURL(url);
+            })
+            .catch(err => console.error('Download failed:', err));
+        });
+        </script>
+        {% endif %} -->
+    </p>
+
+    <p>
+    {% if post.citation %}
+      <details>
+        <summary style="font-size: smaller; cursor: pointer;">
+          <a style="color: rgb(82, 173, 200);">Plaintext Citation  </a>
+        </summary>
+        {{ post.citation }}
+      </details>
+    {% endif %}
+
+    {% if post.bibtex %}
+      <details>
+        <summary style="font-size: smaller; cursor: pointer;">
+          <a style="color: rgb(82, 173, 200);">Bibtex Citation  </a>
+        </summary>
+        {{ post.bibtex }}
+      </details>
+    {% endif %}
+
+    {% if post.ris %}
+      <details>
+        <summary style="font-size: smaller; cursor: pointer;">
+          <a style="color: rgb(82, 173, 200);">RIS Citation  </a>
+        </summary>
+        {{ post.ris }}
+      </details>
+    {% endif %}
+    </p>
+    <hr>
+    
+    
+    <!-- {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.citation and post.paperurl and post.slidesurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.citation and post.paperurl and post.bibtexurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.citation and post.paperurl %}
+      {% if post.image %}
+        <div>
+          <img src="{{ post.image }}" alt="{{ post.title }}" />
+        </div>
+      {% endif %}
+      <p><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <details>
+        <summary style="font-size: smaller; cursor: pointer;">
+          <a style="color: rgb(82, 173, 200);">Plaintext Citation</a>
+        </summary>
+        <p>{{ post.citation }}</p>
+      </details>
+      <hr> -->
+      <!-- <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p> -->
+    <!-- {% elsif post.citation and post.slidesurl and post.bibtexurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
+    {% elsif post.citation and post.slidesurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.citation and post.bibtexurl %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}<br /><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.citation %}
+      <p><b>Plaintext Citation</b>: {{ post.citation }}</p>
+    {% elsif post.paperurl and post.bibtexurl %}
+      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.paperurl %}
+      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+    {% elsif post.slidesurl and post.bibtexurl %}
+      <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% elsif post.slidesurl %}
+      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.bibtexurl %}
+      <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% endif %} -->
+
+  </article>
+</div>
