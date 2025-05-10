@@ -8,7 +8,7 @@ date: 2025-08-10
 venue: 'SIGGRAPH’25'
 paperurl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis.pdf'
 suppurl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis_supp.pdf'
-videocoming: 'true'
+videocoming: true
 # videourl: 'https://ch4n9zy.github.io/files/Large-Scale-Multi-Character-Interaction-Synthesis.mp4'
 # bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
