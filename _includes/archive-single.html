@@ -60,11 +60,23 @@
     {% endif %}
 
     <p>
-      {% if post.paperurl %}<a href="{{ post.paperurl }}" download="paper.pdf">Download Paper</a> | {% endif %}
+      {% if post.paperurl %}
+        [<a href="{{ post.paperurl }}" target="_blank"><b>Download Paper</b></a>]
+      {% else %}
+        [<a>Paper Coming Soon</a>]
+      {% endif %}
 
-      {% if post.suppurl %}<a href="{{ post.suppurl }}" download="supp.pdf">Download Supplementary Material</a> | {% endif %}
+      {% if post.suppurl %}
+        [<a href="{{ post.suppurl }}" target="_blank"><b>Download Supplementary Material</b></a>]
+      {% else %}
+        [<a>Supplementary Material Coming Soon</a>]
+      {% endif %}
 
-      {% if post.videourl %}<a href="{{ post.videourl }}" download="video.mp4">Download Video</a> | {% endif %}
+      {% if post.videourl %}
+        [<a href="{{ post.videourl }}" target="_blank"><b>YouTube Video</b></a>]
+      {% else %}
+        [<a>Video Coming Soon</a>]
+      {% endif %}
       <!-- {% if post.videourl %}
         <button id="downloadBtn">Download Video</button>
         <script>

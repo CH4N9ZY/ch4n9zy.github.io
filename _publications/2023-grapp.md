@@ -7,7 +7,7 @@ excerpt: 'Human Motion Generation; Motion Style Transfer; Diffusion Model'
 date: 2023-02-01
 venue: "GRAPP'23"
 paperurl: 'https://ch4n9zy.github.io/files/Unifying_Human_Motion_Synthesis_and_Style_Transfer_with_Denoising_Diffusion_Probabilistic_Models.pdf'
-videourl: 'https://ch4n9zy.github.io/files/Unifying_Human_Motion_Synthesis_and_Style_Transfer_with_Denoising_Diffusion_Probabilistic_Models.mp4'
+videourl: 'https://www.youtube.com/watch?v=4nVSNOruYvY'
 # bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
 # slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 citation: 'Ziyi Chang, Edmund J. C. Findlay, Haozheng Zhang and Hubert P. H. Shum, "Unifying Human Motion Synthesis and Style Transfer with Denoising Diffusion Probabilistic Models," in GRAPP’23: Proceedings of the 2023 International Conference on Computer Graphics Theory and Applications, pp. 64-74, Lisbon, Portugal, SciTePress, Feb 2023.'
