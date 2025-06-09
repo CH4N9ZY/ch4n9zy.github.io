@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student (Viva at September 2025) at Durham University.
+I am a Ph.D. student at Durham University. My viva has been scheduled in September.
 
 ## Research Interests
 
@@ -14,13 +14,25 @@ I am a Ph.D. student (Viva at September 2025) at Durham University.
 
 ## News
 
-- **[June 2025]** Our survey paper about diffusion models is accepted to Pattern Recognition!
-- **[May 2025]** Our paper about multi-character interaction synthesis is accepted to SIGGRAPH 2025!
-- **[May 2025]** I work as a part-time Research Assistant in Durham-SMU Human-Robot Interaction Project with Singapore Management University.
-- **[Oct. 2024]** I am involved in the teaching of Data Science as Demonstrator.
-- **[Oct. 2023]** I am involved in the teaching of Data Analytics in Action and Learning from Data as Demonstrator.
-- **[July 2023]** Our paper about adversarial attack against action recognition is accepted by ICCV'23.
-- **[Apr. 2023]** I start co-supervising a PhD student with Prof. Hubert P. H. Shum on the topic of interactive motion modelling.
+<ul>
+  <li>[<a style="color: rgb(252, 0, 0)">Pinned</a>] I'm <b>open to work</b> now.</li>
+  <li><a style="color: rgb(252, 0, 0)">06/2025</a> One <a href="https://ch4n9zy.github.io/publication/2025-pr" target="_blank">paper</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
+  <li><a style="color: rgb(252, 0, 0)">05/2025</a> I'm involved in the <i>Durham-SMU Seedcorn Project 2025</i> as a <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> to collaborate with the <a href="https://smuhci.com/" target="_blank">HCI research group</a> from <i>School of Computing and Information Systems, Singapore Management University</i>.</li>
+  <li><a style="color: rgb(252, 0, 0)">05/2025</a> One <a href="https://ch4n9zy.github.io/publication/2025-siggraph" target="_blank">paper</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH'25</b></a>.</li>
+  <!-- <li><a style="color: rgb(252, 0, 0)">04/2025</a> I gave a presentation at <i>Renmin University of China.</li> -->
+  <li><a style="color: rgb(252, 0, 0)">10/2024</a> I am involved in the teaching of <i>Data Science</i> as Demonstrator.</li>
+  <li><a style="color: rgb(252, 0, 0)">10/2023</a> I am involved in the teaching of <i>Data Analytics in Action</i> and <i>Learning from Data</i> as Demonstrator.</li>
+  <li><a style="color: rgb(252, 0, 0)">07/2023</a> One <a href="https://ch4n9zy.github.io/publication/2023-iccv" target="_blank">paper</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>ICCV'23</b></a>.</li>
+  <li><a style="color: rgb(252, 0, 0)">04/2023</a> I start to co-supervise a PhD student with <a href="https://hubertshum.com/" target="_blank">Prof. Hubert P. H. Shum</a>.</li>
+</ul>
+
+<!-- - **[June 2025]** Our survey paper about diffusion models is accepted to Pattern Recognition! -->
+<!-- - **[May 2025]** Our paper about multi-character interaction synthesis is accepted to SIGGRAPH 2025! -->
+<!-- - **[May 2025]** I work as a part-time Research Assistant in Durham-SMU Human-Robot Interaction Project with Singapore Management University. -->
+<!-- - **[Oct. 2024]** I am involved in the teaching of Data Science as Demonstrator. -->
+<!-- - **[Oct. 2023]** I am involved in the teaching of Data Analytics in Action and Learning from Data as Demonstrator. -->
+<!-- - **[July 2023]** Our paper about adversarial attack against action recognition is accepted by ICCV'23. -->
+<!-- - **[Apr. 2023]** I start co-supervising a PhD student with Prof. Hubert P. H. Shum on the topic of interactive motion modelling. -->
 <details>
   <summary style="cursor: pointer; color: #007acc;">More News…</summary>
   <ul>
