@@ -22,13 +22,16 @@ I am a Ph.D. student (Viva at September 2025) at Durham University.
 - **[July 2023]** Our paper about adversarial attack against action recognition is accepted by ICCV'23.
 - **[Apr. 2023]** I start co-supervising a PhD student with Prof. Hubert P. H. Shum on the topic of interactive motion modelling.
 <details>
-<summary>More News…</summary>
-- **[Dec. 2022]** Our paper about stylized motion generation with diffusion models is accepted to GRAPP 2023.
-- **[Oct. 2022]** Our paper about stylized 3D shape generation with transfer learning is accepted to VRST 2022.
-- **[Oct. 2022]** I am involved in the teaching of *Programming (Gold)*, *Data Science*, and *Computational Thinking* as Demonstrator.
-- **[Sept. 2022]** Our paper about stylized locomotion generation with diffusion models is accepted to MIG 2022.
-- **[Aug. 2022]** I work as Supporting Chair of the 21st ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA'22).
-- **[Jan. 2022]** I am involved in the teaching of Programming for Data Science as Demonstrator.
+  <summary style="cursor: pointer; color: #007acc;">More News…</summary>
+  <ul>
+  <!-- <ul style="list-style:none; margin:0; padding:0;"> -->
+    <li><a style="color: rgb(252, 0, 0)">12/2022</a> One <a href="https://ch4n9zy.github.io/publication/2023-grapp" target="_blank">paper</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>GRAPP'23</b></a>.</li>
+    <li><a style="color: rgb(252, 0, 0)">10/2022</a> One <a href="https://ch4n9zy.github.io/publication/2022-vrst" target="_blank">paper</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>VRST'22</b></a>.</li>
+    <li><a style="color: rgb(252, 0, 0)">10/2022</a> I am involved in the teaching of <i>Programming (Gold)</i>, <i>Data Science</i>, and <i>Computational Thinking</i> as Demonstrator.</li>
+    <li><a style="color: rgb(252, 0, 0)">09/2022</a> One <a href="https://ch4n9zy.github.io/publication/2022-mig" target="_blank">poster</a> is accepted by <a style="color: rgb(252, 151, 0)"><b>MIG'22</b></a>.</li>
+    <li><a style="color: rgb(252, 0, 0)">08/2022</a> I am involved in the organisation of <i><a href="https://computeranimation.org/2022/people.html" target="_blank">the 21st ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA'22)</a></i> as <a style="color: rgb(252, 151, 0)"><b>Supporting Chair</b></a>.</li>
+    <li><a style="color: rgb(252, 0, 0)">01/2022</a> I am involved in the teaching of <i>Programming for Data Science</i> as Demonstrator.</li>
+  </ul>
 </details>
 
 {% include_relative _includes/publications.md %}
