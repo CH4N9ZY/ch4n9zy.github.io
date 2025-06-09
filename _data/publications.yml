@@ -3,7 +3,7 @@ main:
   - title: Large-Scale Multi-Character Interaction Synthesis
     authors: <strong>Ziyi Chang</strong>, He Wang, George Alex Koulieris, Hubert P. H. Shum
     conference_short: SIGGRAPH
-    conference: Special Interest Group on Computer Graphics and Interactive Techniques Conference <strong>(SIGGRAPH)</strong>, 2025.
+    conference: Special Interest Group on Computer Graphics and Interactive Techniques Conference (<a style="color: rgb(252, 151, 0)"><b>SIGGRAPH 2025</b></a>), 2025.
     pdf: https://arxiv.org/pdf/2505.14087
     page: http://hubertshum.com/pbl_siggraph2025interaction.htm
     video: https://www.youtube.com/watch?v=ImNVCrJkzRE
