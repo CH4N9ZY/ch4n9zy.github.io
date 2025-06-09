@@ -1,0 +1,7 @@
+@article{chang2025design,
+ author={Chang, Ziyi and Koulieris, George Alex and Chang, Hyung Jin and Shum, Hubert P. H.},
+ journal={Pattern Recognition},
+ title={On the Design Fundamentals of Diffusion Models: A Survey},
+ year={2025},
+ publisher={Elsevier},
+}
