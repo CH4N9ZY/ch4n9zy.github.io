@@ -43,9 +43,8 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
     <li><b>[Sept. 2024]</b> Our paper about stylized locomotion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>MIG'22</b></a>.</li>
     <li><b>[Aug. 2022]</b> I work as <a style="color: rgb(252, 151, 0)"><b>Supporting Chair</b></a> of <a href="https://computeranimation.org/2022/people.html" target="_blank">the 21st ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA'22)</a>.</li>
     <li><b>[Jan. 2022]</b> I am involved in the teaching of Programming for Data Science as Demonstrator.</li>
-  </ul>
 </details>
-
+</ul>
 {% include_relative _includes/publications.md %}
 
 {% include_relative _includes/services.md %}
