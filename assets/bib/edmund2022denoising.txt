@@ -1,0 +1,10 @@
+@inproceedings{edmund2022denoising,
+ author={Findlay, Edmund J. C. and Zhang, Haozheng and Chang, Ziyi and Shum, Hubert P. H.},
+ booktitle={Proceedings of the 2022 ACM SIGGRAPH Conference on Motion, Interaction and Games},
+ series={MIG '22},
+ title={Denoising Diffusion Probabilistic Models for Styled Walking Synthesis},
+ year={2022},
+ publisher={ACM},
+ Address={New York, NY, USA},
+ location={Guanajuato, Mexico},
+}

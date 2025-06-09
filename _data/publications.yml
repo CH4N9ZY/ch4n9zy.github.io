@@ -47,3 +47,27 @@ main:
     bibtex: ./assets/bib/chang2023unifying.txt
     image: ./assets/img/chang2023unifying.png
     # notes: Oral Presentation
+
+  - title: 3D Reconstruction of Sculptures from Single Images via Unsupervised Domain Adaptation on Implicit Models
+    authors: <strong>Ziyi Chang</strong>, George Alex Koulieris, Hubert P. H. Shum
+    conference_short: VRST
+    conference: ACM Symposium on Virtual Reality Software and Technology <strong>(VRST)</strong>, 2022.
+    pdf: https://arxiv.org/pdf/2210.04265
+    page: http://hubertshum.com/pbl_vrst2022sculpture.htm
+    video: https://www.youtube.com/watch?v=-yNiXyKWY8g
+    code: https://github.com/mrzzy2021/SculptureRecon
+    bibtex: ./assets/bib/chang2022reconstruction.txt
+    image: ./assets/img/chang2022reconstruction.png
+    # notes: Early Accept
+
+  - title: "Denoising Diffusion Probabilistic Models for Styled Walking Synthesis"
+    authors: Edmund J. C. Findlay, Haozheng Zhang, <strong>Ziyi Chang</strong>, Hubert P. H. Shum
+    conference_short: GRMIGAPP
+    conference: ACM SIGGRAPH Conference on Motion, Interaction and Games <strong>(MIG)</strong> Posters, 2022.
+    pdf: https://arxiv.org/pdf/2209.14828
+    page: http://hubertshum.com/pbl_mig2022style.htm
+    video: https://www.youtube.com/watch?v=2v1sIpD8pLY
+    # code: https://github.com/mrzzy2021/StyledMotionSynthesis
+    bibtex: ./assets/bib/edmund2022denoising.txt
+    image: ./assets/img/edmund2022denoising.png
+    # notes: Oral Presentation
