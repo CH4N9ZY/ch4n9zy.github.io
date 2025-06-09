@@ -8,8 +8,8 @@ main:
     page: http://hubertshum.com/pbl_siggraph2025interaction.htm
     video: https://www.youtube.com/watch?v=ImNVCrJkzRE
     # code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://ch4n9zy.github.io/assets/bib/siggraph.txt
-    image: ./assets/img/siggraph.png
+    bibtex: ./assets/bib/chang2025large.txt
+    image: ./assets/img/chang2025large.png
     # notes: Early Accept
 
   - title: "On the Design Fundamentals of Diffusion Models"
@@ -17,8 +17,33 @@ main:
     conference_short: Pattern Recognition
     conference: Pattern Recognition <strong>(PR)</strong>, 2025.
     pdf: https://arxiv.org/pdf/2306.04542
-    # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     page: http://hubertshum.com/pbl_pr2025diffusion.htm
-    bibtex: https://ch4n9zy.github.io/assets/bib/pr.txt
+    # video: 
+    # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
+    bibtex: ./assets/bib/chang2025design.txt
+    image: ./assets/img/chang2025design.png
     # notes: Oral Presentation
-    image: ./assets/img/pr.png
+  
+  - title: Hard No-Box Adversarial Attack on Skeleton-Based Human Action Recognition with Skeleton-Motion-Informed Gradient
+    authors: Zhengzhi Lu, He Wang, <strong>Ziyi Chang</strong>, Hubert P. H. Shum
+    conference_short: ICCV
+    conference: IEEE/CVF International Conference on Computer Vision <strong>(ICCV)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2308.05681
+    page: http://hubertshum.com/pbl_iccv2023adversarial.htm
+    video: https://www.youtube.com/watch?v=hvniybZIiqA&t=3s
+    code: https://github.com/luyg45/HardNoBoxAttack
+    bibtex: ./assets/bib/lu2023hard.txt
+    image: ./assets/img/lu2023hard.png
+    # notes: Early Accept
+
+  - title: "Unifying Human Motion Synthesis and Style Transfer with Denoising Diffusion Probabilistic Models"
+    authors: <strong>Ziyi Chang</strong>, Edmund J. C. Findlay, Haozheng Zhang, Hubert P. H. Shum
+    conference_short: GRAPP
+    conference: International Conference on Computer Graphics Theory and Applications <strong>(GRAPP)</strong>, 2023.
+    pdf: https://arxiv.org/pdf/2212.08526
+    page: http://hubertshum.com/pbl_grapp2023style.htm
+    video: https://www.youtube.com/watch?v=4nVSNOruYvY
+    code: https://github.com/mrzzy2021/StyledMotionSynthesis
+    bibtex: ./assets/bib/chang2023unifying.txt
+    image: ./assets/img/chang2023unifying.png
+    # notes: Oral Presentation
