@@ -19,7 +19,7 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
   <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Durham-SMU Human-Robot Interaction Project with the <a href="https://smuhci.com/" target="_blank">HCI research group</a> from Singapore Management University.</li>
   <li><b>[May 2025]</b> Our paper about multi-character interaction generation is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH'25</b></a>.</li>
-</ul>
+<!-- </ul> -->
 
 <!-- - **[June 2025]** Our survey paper about diffusion models is accepted to Pattern Recognition! -->
 <!-- - **[May 2025]** Our paper about multi-character interaction synthesis is accepted to SIGGRAPH 2025! -->
@@ -30,7 +30,7 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
 <!-- - **[Apr. 2023]** I start co-supervising a PhD student with Prof. Hubert P. H. Shum on the topic of interactive motion modelling. -->
 <details>
   <summary style="cursor: pointer; color: #007acc;">More News…</summary>
-  <ul>
+  <!-- <ul> -->
   <!-- <ul style="list-style:none; margin:0; padding:0;"> -->
     <!-- <li><a style="color: rgb(252, 0, 0)">04/2025</a> I gave a presentation at <i>Renmin University of China.</li> -->
     <li><b>[Oct. 2024]</b> I am involved in the teaching of Data Science as Demonstrator.</li>
