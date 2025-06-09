@@ -15,7 +15,7 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
 ## News
 
 <ul>
-  <li><b>[Pinned]</b> I'm <b>open to work</b> now.</li>
+  <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li>
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
   <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Durham-SMU Human-Robot Interaction Project with the <a href="https://smuhci.com/" target="_blank">HCI research group</a> from Singapore Management University.</li>
   <li><b>[May 2025]</b> Our paper about multi-character interaction generation is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH'25</b></a>.</li>
@@ -34,7 +34,7 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
   <!-- <ul style="list-style:none; margin:0; padding:0;"> -->
     <!-- <li><a style="color: rgb(252, 0, 0)">04/2025</a> I gave a presentation at <i>Renmin University of China.</li> -->
     <li><b>[Oct. 2024]</b> I am involved in the teaching of Data Science as Demonstrator.</li>
-    <li><b>[Oct. 2023]</b> I am involved in the teaching of <i>Data Analytics in Action</i> and <i>Learning from Data</i> as Demonstrator.</li>
+    <li><b>[Oct. 2023]</b> I am involved in the teaching of Data Analytics in Action and Learning from Data as Demonstrator.</li>
     <li><b>[July 2023]</b> Our paper about adversarial attack against human action recognition is accepted by <a style="color: rgb(252, 151, 0)"><b>ICCV'23</b></a>.</li>
     <li><b>[Apr. 2023]</b> I start to co-supervise a PhD student with <a href="https://hubertshum.com/" target="_blank">Prof. Hubert P. H. Shum</a>.</li>
     <li><b>[Dec. 2022]</b> Our paper about stylized motion generation with diffusio models is accepted by <a style="color: rgb(252, 151, 0)"><b>GRAPP'23</b></a>.</li>
