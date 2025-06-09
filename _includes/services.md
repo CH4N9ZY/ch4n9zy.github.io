@@ -12,7 +12,7 @@
 
 <ul style="margin:0 0 5px;">
   <li>Co-supervising a PhD student with <a href="http://hubertshum.com/" target="_blank">Hubert P. H. Shum</a> at Durham University</li>
-  <li>Regularly checking and reviewing the student’s logical consistency and adherence to best practices
+  <li>Regularly checking and reviewing the student’s logical consistency and adherence to best practices</li>
   <li>Actively providing comprehensive support on academic writing, ensuring the work with logical flow, and aligning with scholarly standards</li>
   <li>Two projects lead to two papers. One receives minor revision from Computer Graphics Forum and the other is under review.</li>
 </ul>
