@@ -8,9 +8,9 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
 
 ## Research Interests
 
-- **Computer Graphics:** Controllable Motion Synthesis
-- **Computer Vision:** Diffusion Models, Human Motion Modelling, 3D Shape Modelling
-- **Machine Learning:** Time-Series Modelling, Transferring Learning, Adversarial Robustness
+- **Computer Graphics:** Character Animation, 3D Shape Modelling
+- **Computer Vision:** Generative Diffusion Models, Human Motion Modelling
+- **Machine Learning:** Spatial-Temporal Modelling, Adversarial Robustness, Transferring Learning
 
 ## News
 
