@@ -33,7 +33,7 @@ main:
     # video: 
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # bibtex: ./assets/bib/chang2025design.txt
-    image: ./assets/img/upcoming.png
+    image: ./assets/img/zhang2025real.png
     # notes: Oral Presentation
   
   - title: Hard No-Box Adversarial Attack on Skeleton-Based Human Action Recognition with Skeleton-Motion-Informed Gradient
