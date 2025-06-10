@@ -10,7 +10,7 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
 
 - **Computer Graphics:** Character Animation, 3D Shape Modelling
 - **Computer Vision:** Generative Diffusion Models, Human Motion Modelling
-- **Machine Learning:** Spatial-Temporal Modelling, Adversarial Robustness, Transferring Learning
+- **Machine Learning:** Spatial-Temporal Modelling, Adversarial Robustness
 
 ## News
 
