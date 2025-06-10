@@ -1,4 +1,4 @@
-@inproceedings{chang2025largescale,
+@inproceedings{chang2025large,
  author={Chang, Ziyi and Wang, He and Koulieris, George Alex and Shum, Hubert P. H.},
  booktitle={Proceedings of the 2025 ACM SIGGRAPH},
  title={Large-Scale Multi-Character Interaction Synthesis},
