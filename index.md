@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at Durham University. My viva has been scheduled in September.
+I am a Ph.D. student at Durham University. Thesis will be submitted in July.
 
 ## Research Interests
 
