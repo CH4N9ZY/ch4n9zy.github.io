@@ -17,7 +17,7 @@ I am a Ph.D. student at Durham University. Thesis will be submitted in July.
 <ul>
   <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li>
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
-  <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project with the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
+  <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project, collaborating with researchers from Durham University and the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
   <li><b>[May 2025]</b> Our paper about multi-character interaction generation is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH 2025</b></a>.</li>
 <!-- </ul> -->
 
