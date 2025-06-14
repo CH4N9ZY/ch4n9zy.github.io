@@ -8,7 +8,7 @@ I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="
 
 ## Research Interests
 
-- **Computer Graphics:** Character Animation, Multi-Character/Crowd Modelling
+- **Computer Graphics:** Character Animation, Multi-Character Interaction
 - **Computer Vision:** Human Modelling, Diffusion Models, Adversarial Robustness
 - **Machine Learning:** Spatial-Temporal Modelling, Generative Models
 
