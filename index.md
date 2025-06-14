@@ -4,13 +4,13 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at Durham University. Thesis will be submitted in July.
+I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="color: rgb(252, 151, 0)"><b>September 2025</b></a>.
 
 ## Research Interests
 
-- **Computer Graphics:** Character Animation, 3D Shape Modelling
-- **Computer Vision:** Generative Diffusion Models, Human Motion Modelling
-- **Machine Learning:** Spatial-Temporal Modelling, Adversarial Robustness
+- **Computer Graphics:** Character Animation, Multi-Character/Crowd Modelling
+- **Computer Vision:** Human Modelling, Diffusion Models, Adversarial Robustness
+- **Machine Learning:** Spatial-Temporal Modelling, Generative Models
 
 ## News
 
