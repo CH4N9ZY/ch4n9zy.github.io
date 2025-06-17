@@ -16,7 +16,7 @@ main:
     authors: <strong>Ziyi Chang</strong>, George Alex Koulieris, Hyung Jin Chang, Hubert P. H. Shum
     conference_short: Pattern Recognition
     conference: Pattern Recognition <strong>(PR)</strong>, 2025.
-    pdf: https://www.sciencedirect.com/science/article/pii/S0031320325005941
+    pdf: https://doi.org/10.1016/j.patcog.2025.111934
     page: http://hubertshum.com/pbl_pr2025diffusion.htm
     # video: 
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
