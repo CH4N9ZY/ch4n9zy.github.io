@@ -16,6 +16,7 @@ I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="
 
 <ul>
   <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li>
+  <li><b>[July 2025]</b> Our paper about reactive motion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>Computer Graphics Forum</b></a>.</li>
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
   <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project, collaborating with researchers from Durham University and the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
   <li><b>[May 2025]</b> Our paper about multi-character interaction generation is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH 2025</b></a>.</li>
@@ -46,5 +47,11 @@ I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="
 </details>
 </ul>
 {% include_relative _includes/publications.md %}
+
+{% include_relative _includes/projects.md %}
+
+{% include_relative _includes/teaching.md %}
+
+{% include_relative _includes/admin.md %}
 
 {% include_relative _includes/services.md %}

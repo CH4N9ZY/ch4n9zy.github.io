@@ -24,17 +24,17 @@ main:
     image: ./assets/img/chang2025design.png
     # notes: Oral Presentation
   
-  - title: "Real-time modelling human responsive motions based on the other character current states"
+  - title: "Real-time and Controllable Reactive Motion Synthesis via Intention Guidance"
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
-    conference_short: upcoming
-    conference: Coming Soon, 2025 # Computer Graphics Forum <strong>(CGF)</strong>, 2025.
+    conference_short: CGF
+    conference: Computer Graphics Forum <strong>(CGF)</strong>, 2025.
     # pdf: https://arxiv.org/pdf/2306.04542
     # page: http://hubertshum.com/pbl_pr2025diffusion.htm
     # video: 
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    # bibtex: ./assets/bib/chang2025design.txt
-    image: ./assets/img/upcoming.png
-    notes: Minor Revision
+    bibtex: ./assets/bib/chang2025design.txt
+    image: ./assets/img/zhang2025real.png
+    # notes: Minor Revision
   
   - title: Hard No-Box Adversarial Attack on Skeleton-Based Human Action Recognition with Skeleton-Motion-Informed Gradient
     authors: Zhengzhi Lu, He Wang, <strong>Ziyi Chang</strong>, Hubert P. H. Shum
