@@ -1,0 +1,7 @@
+@article{zhang25realtime,
+ author={Zhang, Xiaotang and Chang, Ziyi and Men, Qianhui and Shum, Hubert P. H.},
+ journal={Computer Graphics Forum},
+ title={Real-time and Controllable Reactive Motion Synthesis via Intention Guidance},
+ year={2025},
+ publisher={Wiley},
+}

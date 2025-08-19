@@ -4,21 +4,21 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at Durham University. My viva has been scheduled in September.
+I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="color: rgb(252, 151, 0)"><b>September 2025</b></a>.
 
 ## Research Interests
 
-- **Computer Graphics:** Controllable Motion Synthesis
-- **Computer Vision:** Diffusion Models, Human Motion Modelling, 3D Shape Modelling
-- **Machine Learning:** Time-Series Modelling, Transferring Learning, Adversarial Robustness
+- **Computer Graphics:** Character Animation, Multi-Character Interaction
+- **Computer Vision:** Human Modelling, Diffusion Models, Adversarial Robustness
+- **Machine Learning:** Spatial-Temporal Modelling, Generative Models
 
 ## News
 
 <ul>
   <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li>
-  <li><b>[June 2025]</b> Our paper about two-character interaction in-between is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH Aisa 2025</b></a>.</li>
+  <li><b>[July 2025]</b> Our paper about reactive motion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>Computer Graphics Forum</b></a>.</li>
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
-  <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project with the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
+  <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project, collaborating with researchers from Durham University and the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
   <li><b>[May 2025]</b> Our paper about multi-character interaction generation is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH 2025</b></a>.</li>
 <!-- </ul> -->
 
@@ -47,5 +47,11 @@ I am a Ph.D. student at Durham University. My viva has been scheduled in Septemb
 </details>
 </ul>
 {% include_relative _includes/publications.md %}
+
+{% include_relative _includes/projects.md %}
+
+{% include_relative _includes/teaching.md %}
+
+{% include_relative _includes/admin.md %}
 
 {% include_relative _includes/services.md %}
