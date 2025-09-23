@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at Durham University. Viva has been scheduled in <a style="color: rgb(252, 151, 0)"><b>September 2025</b></a>.
+PhD from Durham University. I've successfully defended my PhD thesis on <a style="color: rgb(252, 151, 0)"><b>September 22, 2025</b></a>.
 
 ## Research Interests
 
