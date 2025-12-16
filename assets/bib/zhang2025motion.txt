@@ -1,0 +1,7 @@
+@inproceedings{zhang2025motion,
+  title={Motion In-Betweening for Densely Interacting Characters},
+  author={Zhang, Xiaotang and Chang, Ziyi and Men, Qianhui and Shum, Hubert PH},
+  booktitle={Proceedings of the SIGGRAPH Asia 2025 Conference Papers},
+  pages={1--11},
+  year={2025}
+}
