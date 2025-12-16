@@ -14,7 +14,7 @@ main:
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
     conference_short: SIGGRAPH Aisa
     conference: ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia <strong>(SIGGRAPH Aisa)</strong>, 2025.
-    pdf: https://arxiv.org/pdf/2505.14087
+    pdf: https://arxiv.org/abs/2510.00314
     page: https://hubertshum.com/pbl_siggraphasia2025inbetweening.htm
     video: https://www.youtube.com/watch?v=lqZnDjSt4cE
     bibtex: ./assets/bib/zhang2025motion.txt
