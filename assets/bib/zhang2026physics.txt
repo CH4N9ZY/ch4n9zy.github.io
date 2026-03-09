@@ -1,0 +1,7 @@
+@article{zhang26physics,
+ author={Zhang, Xiaotang and Chang, Ziyi and Men, Qianhui and Shum, Hubert P. H.},
+ journal={Computer Graphics Forum},
+ title={Physics-Based Motion Tracking of Contact-Rich Interacting Characters},
+ year={2026},
+ publisher={Wiley},
+}
