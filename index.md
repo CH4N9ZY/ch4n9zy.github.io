@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-PhD from Durham University. I've successfully defended my PhD thesis on <a style="color: rgb(252, 151, 0)"><b>September 22, 2025</b></a>.
+Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling.
 
 ## Research Interests
 
@@ -15,8 +15,9 @@ PhD from Durham University. I've successfully defended my PhD thesis on <a style
 ## News
 
 <ul>
-  <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li>
-  <!-- <li><b>[Sept. 2025]</b> Our paper about physics-based two-character interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>Eurographics 2026</b></a>.</li> -->
+  <!-- <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li> -->
+  <li><b>[Mar. 2026]</b> I have joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctal researcher.</li>
+  <li><b>[Feb. 2026]</b> Our paper about physics-based two-character interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>Eurographics 2026</b></a>.</li>
   <li><b>[Sept. 2025]</b> I've successfully passed PhD viva</li>
   <li><b>[Aug. 2025]</b> Our paper about two-character interaction in-between is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH Aisa 2025</b></a>.</li>
   <li><b>[July 2025]</b> Our paper about reactive motion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>Computer Graphics Forum</b></a>.</li>
