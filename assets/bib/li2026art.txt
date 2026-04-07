@@ -1,0 +1,7 @@
+@inproceedings{li26art,
+ author={Li, Ruochen and Chang, Ziyi and Hu, Junyan and Li, Jiannan and Atapour-Abarghouei, Amir and Shum, Hubert P. H.},
+ booktitle={Proceedings of the 2026 IEEE International Conference on Human-Machine Systems},
+ title={ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations},
+ year={2026},
+ location={Singapore, Singapore},
+}

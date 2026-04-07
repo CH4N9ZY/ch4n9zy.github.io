@@ -16,6 +16,7 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
 
 <ul>
   <!-- <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li> -->
+  <li><b>[Feb. 2026]</b> Our paper about human-robot interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE ICHMS 2026</b></a>.</li>
   <li><b>[Mar. 2026]</b> I have joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctal researcher.</li>
   <li><b>[Feb. 2026]</b> Our paper about physics-based two-character interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>Eurographics 2026</b></a>.</li>
   <li><b>[Sept. 2025]</b> I've successfully passed PhD viva</li>
