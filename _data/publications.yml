@@ -1,6 +1,6 @@
 main:
 
-  - title: ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations
+  - title: "ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations"
     authors: Ruochen Li, <strong>Ziyi Chang</strong>, Junyan Hu, Jiannan Li, Amir Atapour-Abarghouei, Hubert P. H. Shum
     conference_short: ICHMS
     conference: IEEE International Conference on Human-Machine Systems <strong>(ICHMS)</strong>, 2026.
