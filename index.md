@@ -77,13 +77,14 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
     <span class="publication-control-label">Select a Topic:</span>
     <button class="publication-filter is-active" type="button" data-topic-filter="all"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> All</button>
     <button class="publication-filter" type="button" data-topic-filter="character animation"><i class="fa-solid fa-person-running" aria-hidden="true"></i> Character Animation</button>
-    <button class="publication-filter" type="button" data-topic-filter="motion analysis"><i class="fa-solid fa-route" aria-hidden="true"></i> Motion Analysis</button>
+    <button class="publication-filter" type="button" data-topic-filter="motion modelling"><i class="fa-solid fa-route" aria-hidden="true"></i> Motion Modelling</button>
     <button class="publication-filter" type="button" data-topic-filter="generative ai"><i class="fa-solid fa-image" aria-hidden="true"></i> Generative AI</button>
-    <button class="publication-filter" type="button" data-topic-filter="action recognition"><i class="fa-solid fa-person-circle-question" aria-hidden="true"></i> Action Recognition</button>
+    <button class="publication-filter" type="button" data-topic-filter="interaction modelling"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i> Interaction Modelling</button>
     <button class="publication-filter" type="button" data-topic-filter="crowd modelling"><i class="fa-solid fa-people-group" aria-hidden="true"></i> Crowd Modelling</button>
-    <button class="publication-filter" type="button" data-topic-filter="virtual reality"><i class="fa-solid fa-vr-cardboard" aria-hidden="true"></i> Virtual Reality</button>
-    <button class="publication-filter" type="button" data-topic-filter="autonomous vehicles"><i class="fa-solid fa-car" aria-hidden="true"></i> Autonomous Vehicles</button>
+    <button class="publication-filter" type="button" data-topic-filter="physics-based animation"><i class="fa-solid fa-atom" aria-hidden="true"></i> Physics-Based Animation</button>
+    <button class="publication-filter" type="button" data-topic-filter="trustworthy ai"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Trustworthy AI</button>
     <button class="publication-filter" type="button" data-topic-filter="3d reconstruction"><i class="fa-solid fa-cubes" aria-hidden="true"></i> 3D Reconstruction</button>
+    <button class="publication-filter" type="button" data-topic-filter="virtual reality"><i class="fa-solid fa-vr-cardboard" aria-hidden="true"></i> Virtual Reality</button>
   </div>
   <div class="publication-control-row">
     <span class="publication-control-label">Select a Year:</span>
