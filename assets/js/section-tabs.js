@@ -80,6 +80,8 @@ function filterPublications(topic) {
   if (heading) {
     heading.textContent = `Research Publications - ${label}`;
   }
+
+  scrollToPublicationResults();
 }
 
 function filterPublicationsByYear(year) {
@@ -97,6 +99,15 @@ function filterPublicationsByYear(year) {
 
   if (heading) {
     heading.textContent = `Research Publications - ${selectedYear === "all" ? "All" : selectedYear}`;
+  }
+
+  scrollToPublicationResults();
+}
+
+function scrollToPublicationResults() {
+  const results = document.getElementById("full-publications");
+  if (results) {
+    results.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 

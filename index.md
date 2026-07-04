@@ -95,10 +95,7 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
   </div>
 </div>
 
-### Featured Publications
-{: #featured-publications }
-
-{% include publication-list.md limit=5 %}
+<hr class="publication-divider">
 
 ### Full Publications
 {: #full-publications }

@@ -67,7 +67,7 @@
 }
 
 .publication-controls {
-  margin: 0 0 22px;
+  margin: 0 0 18px;
 }
 
 .publication-control-row {
@@ -108,6 +108,17 @@
 
 .publication-item[hidden] {
   display: none;
+}
+
+.publication-divider {
+  border: 0;
+  height: 1px;
+  margin: 28px 0 30px;
+  background: #bfc7d1;
+}
+
+#full-publications {
+  scroll-margin-top: 88px;
 }
 
 .homepage-panel {
@@ -371,8 +382,9 @@ a:hover small {
 }
 
 .wrapper {
-  width:960px;
-  margin:0 auto;
+  width:1180px;
+  max-width:calc(100vw - 40px);
+  margin:0 20px;
 }
 
 blockquote {
@@ -424,6 +436,7 @@ header {
   width:232px;
   float:left;
   position:fixed;
+  left:20px;
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:5.5em;
   text-align:center
@@ -491,7 +504,7 @@ header ul a strong {
 }
 
 section {
-  width:650px;
+  width:880px;
   float:right;
   padding-top:5.5em;
   padding-bottom:50px;
@@ -757,6 +770,10 @@ html[data-theme="dark"] .publication-filter.is-active {
   color: #20212b;
   background: #ffffff;
   border-color: #ffffff;
+}
+
+html[data-theme="dark"] .publication-divider {
+  background: #4c5260;
 }
 
 @media print {
