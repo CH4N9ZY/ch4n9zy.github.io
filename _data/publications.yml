@@ -4,6 +4,9 @@ main:
     authors: <strong>Ziyi Chang</strong>, Kanglei Zhou, Xiaohui Liang, Hubert P. H. Shum
     conference_short: IEEE TCSVT
     conference: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>, 2026.
+    year: 2026
+    type: Journal
+    topics: Action Recognition, Motion Analysis
     pdf: https://ieeexplore.ieee.org/document/11560959
     page: https://hubertshum.com/pbl_tcsvt2026quality.htm
     bibtex: ./assets/bib/chang2026quality.txt
@@ -13,6 +16,9 @@ main:
     authors: Ruochen Li, <strong>Ziyi Chang</strong>, Junyan Hu, Jiannan Li, Amir Atapour-Abarghouei, Hubert P. H. Shum
     conference_short: ICHMS
     conference: IEEE International Conference on Human-Machine Systems <strong>(ICHMS)</strong>, 2026.
+    year: 2026
+    type: Conference
+    topics: Motion Analysis, Autonomous Vehicles
     pdf: https://arxiv.org/abs/2604.03649
     page: https://hubertshum.com/pbl_ichms2026trajectory.htm
     # video: https://www.youtube.com/watch?v=0tp6X_VSgmc
@@ -23,6 +29,9 @@ main:
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
     conference_short: Eurographics
     conference: Annual Conference of European Association for Computer Graphcis <strong>(Eurographics)</strong>, 2026.
+    year: 2026
+    type: Conference
+    topics: Character Animation, Motion Analysis
     pdf: https://onlinelibrary.wiley.com/doi/10.1111/cgf.70336
     page: https://hubertshum.com/pbl_eg2026physics.htm
     video: https://www.youtube.com/watch?v=0tp6X_VSgmc
@@ -33,6 +42,9 @@ main:
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
     conference_short: SIGGRAPH Aisa
     conference: ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia <strong>(SIGGRAPH Aisa)</strong>, 2025.
+    year: 2025
+    type: Conference
+    topics: Character Animation, Motion Analysis
     pdf: https://arxiv.org/abs/2510.00314
     page: https://hubertshum.com/pbl_siggraphasia2025inbetweening.htm
     video: https://www.youtube.com/watch?v=lqZnDjSt4cE
@@ -43,6 +55,9 @@ main:
     authors: <strong>Ziyi Chang</strong>, He Wang, George Alex Koulieris, Hubert P. H. Shum
     conference_short: SIGGRAPH
     conference: Special Interest Group on Computer Graphics and Interactive Techniques Conference <strong>(SIGGRAPH)</strong>, 2025.
+    year: 2025
+    type: Conference
+    topics: Character Animation, Generative AI, Crowd Modelling
     pdf: https://arxiv.org/pdf/2505.14087
     page: http://hubertshum.com/pbl_siggraph2025interaction.htm
     video: https://www.youtube.com/watch?v=ImNVCrJkzRE
@@ -55,6 +70,9 @@ main:
     authors: <strong>Ziyi Chang</strong>, George Alex Koulieris, Hyung Jin Chang, Hubert P. H. Shum
     conference_short: Pattern Recognition
     conference: Pattern Recognition <strong>(PR)</strong>, 2025.
+    year: 2025
+    type: Journal
+    topics: Generative AI
     pdf: https://doi.org/10.1016/j.patcog.2025.111934
     page: http://hubertshum.com/pbl_pr2025diffusion.htm
     # video: 
@@ -67,6 +85,9 @@ main:
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
     conference_short: CGF
     conference: Computer Graphics Forum <strong>(CGF)</strong>, 2025.
+    year: 2025
+    type: Journal
+    topics: Character Animation, Motion Analysis
     # pdf: https://arxiv.org/pdf/2306.04542
     # page: http://hubertshum.com/pbl_pr2025diffusion.htm
     # video: 
@@ -79,6 +100,9 @@ main:
     authors: Zhengzhi Lu, He Wang, <strong>Ziyi Chang</strong>, Hubert P. H. Shum
     conference_short: ICCV
     conference: IEEE/CVF International Conference on Computer Vision <strong>(ICCV)</strong>, 2023.
+    year: 2023
+    type: Conference
+    topics: Action Recognition, Motion Analysis
     pdf: https://arxiv.org/pdf/2308.05681
     page: http://hubertshum.com/pbl_iccv2023adversarial.htm
     video: https://www.youtube.com/watch?v=hvniybZIiqA&t=3s
@@ -91,6 +115,9 @@ main:
     authors: <strong>Ziyi Chang</strong>, Edmund J. C. Findlay, Haozheng Zhang, Hubert P. H. Shum
     conference_short: GRAPP
     conference: International Conference on Computer Graphics Theory and Applications <strong>(GRAPP)</strong>, 2023.
+    year: 2023
+    type: Conference
+    topics: Character Animation, Generative AI
     pdf: https://arxiv.org/pdf/2212.08526
     page: http://hubertshum.com/pbl_grapp2023style.htm
     video: https://www.youtube.com/watch?v=4nVSNOruYvY
@@ -103,6 +130,9 @@ main:
     authors: <strong>Ziyi Chang</strong>, George Alex Koulieris, Hubert P. H. Shum
     conference_short: VRST
     conference: ACM Symposium on Virtual Reality Software and Technology <strong>(VRST)</strong>, 2022.
+    year: 2022
+    type: Conference
+    topics: 3D Reconstruction, Virtual Reality
     pdf: https://arxiv.org/pdf/2210.04265
     page: http://hubertshum.com/pbl_vrst2022sculpture.htm
     video: https://www.youtube.com/watch?v=-yNiXyKWY8g
@@ -115,6 +145,9 @@ main:
     authors: Edmund J. C. Findlay, Haozheng Zhang, <strong>Ziyi Chang</strong>, Hubert P. H. Shum
     conference_short: MIG
     conference: ACM SIGGRAPH Conference on Motion, Interaction and Games <strong>(MIG)</strong> Posters, 2022.
+    year: 2022
+    type: Poster
+    topics: Character Animation, Generative AI
     pdf: https://arxiv.org/pdf/2209.14828
     page: http://hubertshum.com/pbl_mig2022style.htm
     video: https://www.youtube.com/watch?v=2v1sIpD8pLY

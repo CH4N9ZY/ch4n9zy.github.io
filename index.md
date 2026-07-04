@@ -70,13 +70,44 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
 
   <div id="publication" class="homepage-panel" data-section-panel="publication" markdown="1">
 
-## Publication
+<h2 class="publication-heading" data-publication-heading>Research Publications - All</h2>
 
-### Selected Publications
+<div class="publication-controls">
+  <div class="publication-control-row">
+    <span class="publication-control-label">Select a Topic:</span>
+    <button class="publication-filter is-active" type="button" data-topic-filter="all"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> All</button>
+    <button class="publication-filter" type="button" data-topic-filter="character animation"><i class="fa-solid fa-person-running" aria-hidden="true"></i> Character Animation</button>
+    <button class="publication-filter" type="button" data-topic-filter="motion analysis"><i class="fa-solid fa-route" aria-hidden="true"></i> Motion Analysis</button>
+    <button class="publication-filter" type="button" data-topic-filter="generative ai"><i class="fa-solid fa-image" aria-hidden="true"></i> Generative AI</button>
+    <button class="publication-filter" type="button" data-topic-filter="action recognition"><i class="fa-solid fa-person-circle-question" aria-hidden="true"></i> Action Recognition</button>
+    <button class="publication-filter" type="button" data-topic-filter="crowd modelling"><i class="fa-solid fa-people-group" aria-hidden="true"></i> Crowd Modelling</button>
+    <button class="publication-filter" type="button" data-topic-filter="virtual reality"><i class="fa-solid fa-vr-cardboard" aria-hidden="true"></i> Virtual Reality</button>
+    <button class="publication-filter" type="button" data-topic-filter="autonomous vehicles"><i class="fa-solid fa-car" aria-hidden="true"></i> Autonomous Vehicles</button>
+    <button class="publication-filter" type="button" data-topic-filter="3d reconstruction"><i class="fa-solid fa-cubes" aria-hidden="true"></i> 3D Reconstruction</button>
+  </div>
+  <div class="publication-control-row">
+    <span class="publication-control-label">Sort By:</span>
+    <button class="publication-sort is-active" type="button" data-publication-sort="year">Year</button>
+    <button class="publication-sort" type="button" data-publication-sort="type">Type</button>
+    <button class="publication-sort" type="button" data-publication-sort="default">Default</button>
+  </div>
+  <div class="publication-control-row">
+    <span class="publication-control-label">Go To:</span>
+    <button class="publication-jump" type="button" data-publication-jump="featured-publications">Featured Publications</button>
+    <button class="publication-jump" type="button" data-year-filter="2026">2026</button>
+    <button class="publication-jump" type="button" data-year-filter="2025">2025</button>
+    <button class="publication-jump" type="button" data-year-filter="2023">2023</button>
+    <button class="publication-jump" type="button" data-year-filter="2022">2022</button>
+  </div>
+</div>
+
+### Featured Publications
+{: #featured-publications }
 
 {% include publication-list.md limit=5 %}
 
 ### Full Publications
+{: #full-publications }
 
 {% include publication-list.md %}
 
