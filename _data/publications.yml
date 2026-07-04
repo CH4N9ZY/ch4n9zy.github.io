@@ -6,7 +6,7 @@ main:
     conference: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>, 2026.
     year: 2026
     type: Journal
-    topics: Action Recognition, Motion Analysis
+    topics: Trustworthy AI, Motion Modelling, Generative AI
     pdf: https://ieeexplore.ieee.org/document/11560959
     page: https://hubertshum.com/pbl_tcsvt2026quality.htm
     bibtex: ./assets/bib/chang2026quality.txt
@@ -18,7 +18,7 @@ main:
     conference: IEEE International Conference on Human-Machine Systems <strong>(ICHMS)</strong>, 2026.
     year: 2026
     type: Conference
-    topics: Motion Analysis, Autonomous Vehicles
+    topics: Motion Modelling, Interaction Modelling, Crowd Modelling
     pdf: https://arxiv.org/abs/2604.03649
     page: https://hubertshum.com/pbl_ichms2026trajectory.htm
     # video: https://www.youtube.com/watch?v=0tp6X_VSgmc
@@ -31,7 +31,7 @@ main:
     conference: Annual Conference of European Association for Computer Graphcis <strong>(Eurographics)</strong>, 2026.
     year: 2026
     type: Conference
-    topics: Character Animation, Motion Analysis
+    topics: Character Animation, Motion Modelling, Physics-Based Animation
     pdf: https://onlinelibrary.wiley.com/doi/10.1111/cgf.70336
     page: https://hubertshum.com/pbl_eg2026physics.htm
     video: https://www.youtube.com/watch?v=0tp6X_VSgmc
@@ -44,7 +44,7 @@ main:
     conference: ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia <strong>(SIGGRAPH Aisa)</strong>, 2025.
     year: 2025
     type: Conference
-    topics: Character Animation, Motion Analysis
+    topics: Character Animation, Motion Modelling, Physics-Based Animation
     pdf: https://arxiv.org/abs/2510.00314
     page: https://hubertshum.com/pbl_siggraphasia2025inbetweening.htm
     video: https://www.youtube.com/watch?v=lqZnDjSt4cE
@@ -57,7 +57,7 @@ main:
     conference: Special Interest Group on Computer Graphics and Interactive Techniques Conference <strong>(SIGGRAPH)</strong>, 2025.
     year: 2025
     type: Conference
-    topics: Character Animation, Generative AI, Crowd Modelling
+    topics: Character Animation, Generative AI, Interaction Modelling, Crowd Modelling
     pdf: https://arxiv.org/pdf/2505.14087
     page: http://hubertshum.com/pbl_siggraph2025interaction.htm
     video: https://www.youtube.com/watch?v=ImNVCrJkzRE
@@ -87,7 +87,7 @@ main:
     conference: Computer Graphics Forum <strong>(CGF)</strong>, 2025.
     year: 2025
     type: Journal
-    topics: Character Animation, Motion Analysis
+    topics: Character Animation, Motion Modelling, Interaction Modelling
     # pdf: https://arxiv.org/pdf/2306.04542
     # page: http://hubertshum.com/pbl_pr2025diffusion.htm
     # video: 
@@ -102,7 +102,7 @@ main:
     conference: IEEE/CVF International Conference on Computer Vision <strong>(ICCV)</strong>, 2023.
     year: 2023
     type: Conference
-    topics: Action Recognition, Motion Analysis
+    topics: Trustworthy AI, Motion Modelling
     pdf: https://arxiv.org/pdf/2308.05681
     page: http://hubertshum.com/pbl_iccv2023adversarial.htm
     video: https://www.youtube.com/watch?v=hvniybZIiqA&t=3s
@@ -117,7 +117,7 @@ main:
     conference: International Conference on Computer Graphics Theory and Applications <strong>(GRAPP)</strong>, 2023.
     year: 2023
     type: Conference
-    topics: Character Animation, Generative AI
+    topics: Character Animation, Generative AI, Motion Modelling
     pdf: https://arxiv.org/pdf/2212.08526
     page: http://hubertshum.com/pbl_grapp2023style.htm
     video: https://www.youtube.com/watch?v=4nVSNOruYvY
@@ -147,7 +147,7 @@ main:
     conference: ACM SIGGRAPH Conference on Motion, Interaction and Games <strong>(MIG)</strong> Posters, 2022.
     year: 2022
     type: Poster
-    topics: Character Animation, Generative AI
+    topics: Character Animation, Generative AI, Motion Modelling
     pdf: https://arxiv.org/pdf/2209.14828
     page: http://hubertshum.com/pbl_mig2022style.htm
     video: https://www.youtube.com/watch?v=2v1sIpD8pLY
