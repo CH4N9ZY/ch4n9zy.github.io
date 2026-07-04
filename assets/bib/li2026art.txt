@@ -3,5 +3,6 @@
  booktitle={Proceedings of the 2026 IEEE International Conference on Human-Machine Systems},
  title={ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations},
  year={2026},
+ publisher={IEEE},
  location={Singapore, Singapore},
 }

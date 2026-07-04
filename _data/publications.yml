@@ -1,5 +1,15 @@
 main:
 
+  - title: "Quality-Preserving Imperceptible Adversarial Attack on Skeleton-based Human Action Recognition"
+    authors: <strong>Ziyi Chang</strong>, Kanglei Zhou, Xiaohui Liang, Hubert P. H. Shum
+    conference_short: IEEE TCSVT
+    conference: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>, 2026.
+    pdf: https://ieeexplore.ieee.org/document/11560959
+    page: https://hubertshum.com/pbl_tcsvt2026quality.htm
+    # video: https://www.youtube.com/watch?v=0tp6X_VSgmc
+    bibtex: ./assets/bib/chang2026quality.txt
+    image: ./assets/img/upcoming.png
+  
   - title: "ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations"
     authors: Ruochen Li, <strong>Ziyi Chang</strong>, Junyan Hu, Jiannan Li, Amir Atapour-Abarghouei, Hubert P. H. Shum
     conference_short: ICHMS
@@ -8,7 +18,7 @@ main:
     page: https://hubertshum.com/pbl_ichms2026trajectory.htm
     # video: https://www.youtube.com/watch?v=0tp6X_VSgmc
     bibtex: ./assets/bib/li2026art.txt
-    image: ./assets/img/upcoming.png
+    image: ./assets/img/li2026art.png
 
   - title: Physics-Based Motion Tracking of Contact-Rich Interacting Characters
     authors: Xiaotang Zhang, <strong>Ziyi Chang*</strong>, Qianhui Men, Hubert P. H. Shum (* Co-Supervision)
