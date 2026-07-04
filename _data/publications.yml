@@ -6,7 +6,6 @@ main:
     conference: IEEE Transactions on Circuits and Systems for Video Technology <strong>(TCSVT)</strong>, 2026.
     pdf: https://ieeexplore.ieee.org/document/11560959
     page: https://hubertshum.com/pbl_tcsvt2026quality.htm
-    # video: https://www.youtube.com/watch?v=0tp6X_VSgmc
     bibtex: ./assets/bib/chang2026quality.txt
     image: ./assets/img/upcoming.png
   
