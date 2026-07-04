@@ -1,13 +1,9 @@
+{% assign publication_limit = include.limit | default: 999 %}
+
 <div class="publications">
 <ol class="bibliography">
 
-{% if include.limit %}
-  {% assign publications = site.data.publications.main | slice: 0, include.limit %}
-{% else %}
-  {% assign publications = site.data.publications.main %}
-{% endif %}
-
-{% for link in publications %}
+{% for link in site.data.publications.main limit: publication_limit %}
 
 <li>
 <div class="pub-row">
