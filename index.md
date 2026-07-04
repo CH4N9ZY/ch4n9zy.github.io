@@ -7,6 +7,9 @@ layout: homepage
   <a href="#publication" class="section-nav-link" data-section-target="publication">Publication</a>
   <a href="#grants" class="section-nav-link" data-section-target="grants">Grants</a>
   <a href="#teaching" class="section-nav-link" data-section-target="teaching">Supervision & Teaching</a>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
 </nav>
 
 <div class="homepage-panels">
