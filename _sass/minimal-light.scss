@@ -6,9 +6,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 0 0 24px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e5e5e5;
+  justify-content: flex-end;
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  z-index: 1000;
+  max-width: calc(100vw - 48px);
+  padding: 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .section-nav-link {
@@ -42,7 +50,9 @@
 
 @media (prefers-color-scheme: dark) {
   .section-nav {
-    border-bottom-color: #40424c;
+    border-color: #40424c;
+    background: rgba(32, 33, 43, 0.94);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
   }
 
   .section-nav-link {
@@ -56,6 +66,22 @@
     color: #3eb7f0;
     background: #282a36;
     border-color: #3eb7f0;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  .section-nav {
+    top: 8px;
+    right: 8px;
+    max-width: calc(100vw - 16px);
+    gap: 4px;
+    padding: 6px;
+  }
+
+  .section-nav-link {
+    min-height: 30px;
+    padding: 0 8px;
+    font-size: 12px;
   }
 }
 
