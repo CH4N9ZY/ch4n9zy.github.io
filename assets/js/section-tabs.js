@@ -62,33 +62,6 @@ function getHomepageSectionFromHash() {
   return panel ? section : "home";
 }
 
-function sortPublicationList(list, sortType) {
-  const items = Array.from(list.querySelectorAll(".publication-item"));
-  const pairs = items.map((item) => ({
-    item,
-    spacer: item.nextElementSibling && item.nextElementSibling.tagName === "BR" ? item.nextElementSibling : null
-  }));
-
-  pairs.sort((a, b) => {
-    if (sortType === "type") {
-      return a.item.dataset.type.localeCompare(b.item.dataset.type) || Number(b.item.dataset.year) - Number(a.item.dataset.year);
-    }
-
-    if (sortType === "default") {
-      return Number(a.item.dataset.originalIndex) - Number(b.item.dataset.originalIndex);
-    }
-
-    return Number(b.item.dataset.year) - Number(a.item.dataset.year);
-  });
-
-  pairs.forEach((pair) => {
-    list.appendChild(pair.item);
-    if (pair.spacer) {
-      list.appendChild(pair.spacer);
-    }
-  });
-}
-
 function filterPublications(topic) {
   const selectedTopic = topic || "all";
   const heading = document.querySelector("[data-publication-heading]");
@@ -109,6 +82,24 @@ function filterPublications(topic) {
   }
 }
 
+function filterPublicationsByYear(year) {
+  const selectedYear = year || "all";
+  const heading = document.querySelector("[data-publication-heading]");
+
+  document.querySelectorAll(".publication-item").forEach((item) => {
+    item.hidden = selectedYear !== "all" && item.dataset.year !== selectedYear;
+  });
+
+  document.querySelectorAll("[data-year-filter]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.yearFilter === selectedYear);
+  });
+  document.querySelectorAll("[data-topic-filter]").forEach((button) => button.classList.remove("is-active"));
+
+  if (heading) {
+    heading.textContent = `Research Publications - ${selectedYear === "all" ? "All" : selectedYear}`;
+  }
+}
+
 function initPublicationControls() {
   document.querySelectorAll("[data-topic-filter]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -116,47 +107,9 @@ function initPublicationControls() {
     });
   });
 
-  document.querySelectorAll("[data-publication-sort]").forEach((button) => {
-    button.addEventListener("click", () => {
-      document.querySelectorAll("[data-publication-sort]").forEach((item) => {
-        item.classList.toggle("is-active", item === button);
-      });
-
-      document.querySelectorAll(".publications ol.bibliography").forEach((list) => {
-        sortPublicationList(list, button.dataset.publicationSort);
-      });
-    });
-  });
-
-  document.querySelectorAll("[data-publication-jump]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = document.getElementById(button.dataset.publicationJump);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    });
-  });
-
   document.querySelectorAll("[data-year-filter]").forEach((button) => {
     button.addEventListener("click", () => {
-      const year = button.dataset.yearFilter;
-      document.querySelectorAll(".publication-item").forEach((item) => {
-        item.hidden = item.dataset.year !== year;
-      });
-
-      document.querySelectorAll("[data-topic-filter]").forEach((item) => item.classList.remove("is-active"));
-      document.querySelectorAll("[data-year-filter]").forEach((item) => {
-        item.classList.toggle("is-active", item === button);
-      });
-      const heading = document.querySelector("[data-publication-heading]");
-      if (heading) {
-        heading.textContent = `Research Publications - ${year}`;
-      }
-
-      const fullPublications = document.getElementById("full-publications");
-      if (fullPublications) {
-        fullPublications.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+      filterPublicationsByYear(button.dataset.yearFilter);
     });
   });
 }

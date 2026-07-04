@@ -86,18 +86,12 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
     <button class="publication-filter" type="button" data-topic-filter="3d reconstruction"><i class="fa-solid fa-cubes" aria-hidden="true"></i> 3D Reconstruction</button>
   </div>
   <div class="publication-control-row">
-    <span class="publication-control-label">Sort By:</span>
-    <button class="publication-sort is-active" type="button" data-publication-sort="year">Year</button>
-    <button class="publication-sort" type="button" data-publication-sort="type">Type</button>
-    <button class="publication-sort" type="button" data-publication-sort="default">Default</button>
-  </div>
-  <div class="publication-control-row">
-    <span class="publication-control-label">Go To:</span>
-    <button class="publication-jump" type="button" data-publication-jump="featured-publications">Featured Publications</button>
-    <button class="publication-jump" type="button" data-year-filter="2026">2026</button>
-    <button class="publication-jump" type="button" data-year-filter="2025">2025</button>
-    <button class="publication-jump" type="button" data-year-filter="2023">2023</button>
-    <button class="publication-jump" type="button" data-year-filter="2022">2022</button>
+    <span class="publication-control-label">Select a Year:</span>
+    <button class="publication-filter" type="button" data-year-filter="all">All</button>
+    <button class="publication-filter" type="button" data-year-filter="2026">2026</button>
+    <button class="publication-filter" type="button" data-year-filter="2025">2025</button>
+    <button class="publication-filter" type="button" data-year-filter="2023">2023</button>
+    <button class="publication-filter" type="button" data-year-filter="2022">2022</button>
   </div>
 </div>
 

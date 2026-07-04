@@ -83,9 +83,7 @@
   font-weight: 600;
 }
 
-.publication-filter,
-.publication-sort,
-.publication-jump {
+.publication-filter {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -102,10 +100,7 @@
 }
 
 .publication-filter:hover,
-.publication-filter.is-active,
-.publication-sort:hover,
-.publication-sort.is-active,
-.publication-jump:hover {
+.publication-filter.is-active {
   color: #ffffff;
   background: #043361;
   border-color: #043361;
@@ -639,7 +634,19 @@ html[data-theme="light"] body {
 }
 
 html[data-theme="light"] .section-nav {
-  background: #303030;
+  background: #f4f4f4;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="light"] .section-nav-link {
+  color: #303030;
+  text-shadow: none;
+}
+
+html[data-theme="light"] .section-nav-link:hover,
+html[data-theme="light"] .section-nav-link.is-active {
+  color: #043361;
+  border-top-color: #043361;
 }
 
 html[data-theme="light"] h1,
@@ -678,19 +685,14 @@ html[data-theme="light"] .theme-toggle {
   background: #f4f4f4;
 }
 
-html[data-theme="light"] .publication-filter,
-html[data-theme="light"] .publication-sort,
-html[data-theme="light"] .publication-jump {
+html[data-theme="light"] .publication-filter {
   color: #043361;
   background: #ffffff;
   border-color: #8f9baa;
 }
 
 html[data-theme="light"] .publication-filter:hover,
-html[data-theme="light"] .publication-filter.is-active,
-html[data-theme="light"] .publication-sort:hover,
-html[data-theme="light"] .publication-sort.is-active,
-html[data-theme="light"] .publication-jump:hover {
+html[data-theme="light"] .publication-filter.is-active {
   color: #ffffff;
   background: #043361;
   border-color: #043361;
@@ -702,7 +704,19 @@ html[data-theme="dark"] body {
 }
 
 html[data-theme="dark"] .section-nav {
-  background: #20212b;
+  background: #303030;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .section-nav-link {
+  color: #ffffff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="dark"] .section-nav-link:hover,
+html[data-theme="dark"] .section-nav-link.is-active {
+  color: #ffffff;
+  border-top-color: #ffffff;
 }
 
 html[data-theme="dark"] h1,
@@ -732,19 +746,14 @@ html[data-theme="dark"] .theme-toggle {
   background: #555;
 }
 
-html[data-theme="dark"] .publication-filter,
-html[data-theme="dark"] .publication-sort,
-html[data-theme="dark"] .publication-jump {
+html[data-theme="dark"] .publication-filter {
   color: #ffffff;
   background: #303030;
   border-color: #d5d7dc;
 }
 
 html[data-theme="dark"] .publication-filter:hover,
-html[data-theme="dark"] .publication-filter.is-active,
-html[data-theme="dark"] .publication-sort:hover,
-html[data-theme="dark"] .publication-sort.is-active,
-html[data-theme="dark"] .publication-jump:hover {
+html[data-theme="dark"] .publication-filter.is-active {
   color: #20212b;
   background: #ffffff;
   border-color: #ffffff;
