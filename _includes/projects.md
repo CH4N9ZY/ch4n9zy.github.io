@@ -1,4 +1,4 @@
-## Projects
+## Grants
 
 <h4 style="margin:0 10px 0;">Cross-Institutional Research Capacity Development in Human-Robot Interaction, 2025 - 2026</h4>
 

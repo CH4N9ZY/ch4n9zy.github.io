@@ -2,6 +2,16 @@
 layout: homepage
 ---
 
+<nav class="section-nav" aria-label="Homepage sections">
+  <a href="#home" class="section-nav-link is-active" data-section-target="home">Home</a>
+  <a href="#publication" class="section-nav-link" data-section-target="publication">Publication</a>
+  <a href="#grants" class="section-nav-link" data-section-target="grants">Grants</a>
+  <a href="#teaching" class="section-nav-link" data-section-target="teaching">Supervision & Teaching</a>
+</nav>
+
+<div class="homepage-panels">
+  <div id="home" class="homepage-panel is-active" data-section-panel="home" markdown="1">
+
 ## About Me
 
 Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling.
@@ -36,7 +46,7 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
 <!-- - **[July 2023]** Our paper about adversarial attack against action recognition is accepted by ICCV'23. -->
 <!-- - **[Apr. 2023]** I start co-supervising a PhD student with Prof. Hubert P. H. Shum on the topic of interactive motion modelling. -->
 <details>
-  <summary style="cursor: pointer; color: #007acc;">More News…</summary>
+  <summary style="cursor: pointer; color: #007acc;">More News...</summary>
   <!-- <ul> -->
   <!-- <ul style="list-style:none; margin:0; padding:0;"> -->
     <!-- <li><a style="color: rgb(252, 0, 0)">04/2025</a> I gave a presentation at <i>Renmin University of China.</li> -->
@@ -52,12 +62,32 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
     <li><b>[Jan. 2022]</b> I am involved in the teaching of Programming for Data Science as Demonstrator.</li>
 </details>
 </ul>
-{% include_relative _includes/publications.md %}
+
+  </div>
+
+  <div id="publication" class="homepage-panel" data-section-panel="publication" markdown="1">
+
+## Publication
+
+### Selected Publications
+
+{% include publication-list.md limit=5 %}
+
+### Full Publications
+
+{% include publication-list.md %}
+
+  </div>
+
+  <div id="grants" class="homepage-panel" data-section-panel="grants" markdown="1">
 
 {% include_relative _includes/projects.md %}
 
+  </div>
+
+  <div id="teaching" class="homepage-panel" data-section-panel="teaching" markdown="1">
+
 {% include_relative _includes/teaching.md %}
 
-{% include_relative _includes/admin.md %}
-
-{% include_relative _includes/services.md %}
+  </div>
+</div>
