@@ -94,6 +94,18 @@
   border-radius: 6px;
 }
 
+.funding-figure {
+  margin: 12px 0 14px;
+  text-align: center;
+}
+
+.funding-figure img {
+  display: block;
+  width: min(100%, 720px);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
 .experience-list {
   display: grid;
   gap: 18px;
