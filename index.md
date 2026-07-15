@@ -23,6 +23,9 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
 
 <div class="fellowship-card">
   <h3>Bienvenüe+ MSCA-COFUND Fellowship</h3>
+  <figure class="fellowship-figure">
+    <img src="./assets/img/bienvenue_plus_funding.jpg" alt="Bienvenüe+ MSCA-COFUND Fellowship funding information">
+  </figure>
   <p>I have been selected as an incoming Bienvenüe+ MSCA-COFUND Fellow for a 24-month independent research programme hosted at Inria Rennes.</p>
   <ul>
     <li><strong>Research direction:</strong> Socially intelligent multi-agent motion generation</li>

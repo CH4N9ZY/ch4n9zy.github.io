@@ -82,6 +82,18 @@
   margin-bottom: 0;
 }
 
+.fellowship-figure {
+  margin: 12px 0 14px;
+  text-align: center;
+}
+
+.fellowship-figure img {
+  display: block;
+  width: min(100%, 550px);
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
 .experience-list {
   display: grid;
   gap: 18px;

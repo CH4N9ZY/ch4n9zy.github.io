@@ -4,6 +4,10 @@
 
 <h4 style="margin:0 10px 0;">Bienvenüe+ MSCA-COFUND Fellowship, 2027 - 2028</h4>
 
+<figure class="fellowship-figure">
+  <img src="../assets/img/bienvenue_plus_funding.jpg" alt="Bienvenüe+ MSCA-COFUND Fellowship funding information">
+</figure>
+
 <ul style="margin:0 0 20px;">
   <li>Role: Incoming Fellow / Project Lead</li>
   <li>Host Institution: Inria Rennes</li>
