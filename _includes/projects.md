@@ -1,4 +1,18 @@
-## Grants
+## Funding & Awards
+
+<h3>Personal Fellowships</h3>
+
+<h4 style="margin:0 10px 0;">Bienvenüe+ MSCA-COFUND Fellowship, 2027 - 2028</h4>
+
+<ul style="margin:0 0 20px;">
+  <li>Role: Incoming Fellow / Project Lead</li>
+  <li>Host Institution: Inria Rennes</li>
+  <li>Host Team: VirtUs</li>
+  <li>Duration: 24 months</li>
+  <li>Research Direction: Socially intelligent multi-agent motion generation</li>
+</ul>
+
+<h3>Research Funding and Project Participation</h3>
 
 <h4 style="margin:0 10px 0;">Cross-Institutional Research Capacity Development in Human-Robot Interaction, 2025 - 2026</h4>
 

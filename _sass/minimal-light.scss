@@ -61,6 +61,72 @@
   background: #ffffff;
 }
 
+.fellowship-card {
+  margin: 24px 0 26px;
+  padding: 16px 18px;
+  border-left: 4px solid #043361;
+  background: #f7f9fb;
+}
+
+.fellowship-card h3 {
+  margin: 0 0 10px;
+}
+
+.fellowship-card p,
+.fellowship-card ul {
+  margin-bottom: 12px;
+}
+
+.fellowship-card p:last-child,
+.fellowship-card ul:last-child {
+  margin-bottom: 0;
+}
+
+.experience-list {
+  display: grid;
+  gap: 18px;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+  padding: 18px 0;
+  border-bottom: 1px solid #d9e0e7;
+}
+
+.experience-card:first-child {
+  padding-top: 4px;
+}
+
+.experience-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 4px 10px;
+  border: 1px solid #043361;
+  border-radius: 4px;
+  color: #043361;
+  background: #f7f9fb;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.experience-content h4 {
+  margin: 0 0 8px;
+}
+
+.experience-content p {
+  margin: 0 0 10px;
+}
+
+.experience-content ul {
+  margin: 0 0 0 18px;
+}
+
 .publication-heading {
   margin: 0 0 14px;
   font-size: 180%;
@@ -170,6 +236,16 @@
 }
 
 @media print, screen and (max-width: 480px) {
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .experience-badge {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
   .section-nav {
     justify-content: flex-start;
     gap: 12px;
@@ -817,6 +893,21 @@ html[data-theme="light"] .theme-toggle {
   background: #f4f4f4;
 }
 
+html[data-theme="light"] .fellowship-card {
+  border-left-color: #043361;
+  background: #f7f9fb;
+}
+
+html[data-theme="light"] .experience-card {
+  border-bottom-color: #d9e0e7;
+}
+
+html[data-theme="light"] .experience-badge {
+  color: #043361;
+  background: #f7f9fb;
+  border-color: #043361;
+}
+
 html[data-theme="light"] .publication-filter {
   color: #043361;
   background: #ffffff;
@@ -876,6 +967,21 @@ html[data-theme="dark"] .social-icons a {
 html[data-theme="dark"] .theme-toggle {
   color: #f4f4f4;
   background: #555;
+}
+
+html[data-theme="dark"] .fellowship-card {
+  border-left-color: rgb(62, 183, 240);
+  background: #282a36;
+}
+
+html[data-theme="dark"] .experience-card {
+  border-bottom-color: #4c5260;
+}
+
+html[data-theme="dark"] .experience-badge {
+  color: #ffffff;
+  background: #303443;
+  border-color: rgb(62, 183, 240);
 }
 
 html[data-theme="dark"] .publication-filter {

@@ -5,7 +5,7 @@ layout: homepage
 <nav class="section-nav" aria-label="Homepage sections">
   <a href="#home" class="section-nav-link is-active" data-section-target="home">Home</a>
   <a href="#publication" class="section-nav-link" data-section-target="publication">Publication</a>
-  <a href="#grants" class="section-nav-link" data-section-target="grants">Grants</a>
+  <a href="#grants" class="section-nav-link" data-section-target="grants">Funding & Awards</a>
   <a href="#teaching" class="section-nav-link" data-section-target="teaching">Supervision & Teaching</a>
   <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
     <i class="fa-solid fa-moon" aria-hidden="true"></i>
@@ -17,24 +17,39 @@ layout: homepage
 
 ## About Me
 
-Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling.
+I am a Postdoctoral Researcher at Inria Rennes and an incoming Bienvenüe+ MSCA-COFUND Fellow. My research develops computational models for socially intelligent virtual humans and embodied agents, with a focus on multi-character interaction, crowd behaviour, generative human motion, and human-robot interaction.
+
+My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme that I developed on socially intelligent multi-agent motion generation, building on my previous work in multi-character interaction synthesis and generative human motion.
+
+<div class="fellowship-card">
+  <h3>Bienvenüe+ MSCA-COFUND Fellowship</h3>
+  <p>I have been selected as an incoming Bienvenüe+ MSCA-COFUND Fellow for a 24-month independent research programme hosted at Inria Rennes.</p>
+  <ul>
+    <li><strong>Research direction:</strong> Socially intelligent multi-agent motion generation</li>
+    <li><strong>Host institution:</strong> Inria Rennes</li>
+    <li><strong>Host team:</strong> VirtUs</li>
+    <li><strong>Research areas:</strong> Multi-character interaction · Crowd modelling · Generative AI · Embodied agents</li>
+  </ul>
+  <p>Bienvenüe+ is an international postdoctoral fellowship programme co-funded by the European Union's Horizon Europe Marie Skłodowska-Curie Actions COFUND programme, Région Bretagne, and participating host institutions.</p>
+</div>
 
 ## Research Interests
 
-- **Computer Graphics:** Character Animation, Multi-Character Interaction
-- **Computer Vision:** Human Modelling, Diffusion Models, Adversarial Robustness
-- **Machine Learning:** Spatial-Temporal Modelling, Generative Models
+- **Research Vision:** Socially intelligent virtual humans and embodied agents
+- **Core Themes:** Multi-character interaction, crowd behaviour, human-robot and human-agent interaction
+- **Methods:** Generative and diffusion models, spatio-temporal representation learning, physics-based and data-driven animation
 
 ## News
 
 <ul>
   <!-- <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li> -->
+  <li><b>[July 2026]</b> I have been selected as an incoming <a style="color: rgb(252, 151, 0)"><b>Bienvenüe+ MSCA-COFUND Fellow</b></a> for a 24-month independent research programme at Inria Rennes.</li>
   <li><b>[May 2026]</b> Our paper about adversarial attack on human motions is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE TCSVT</b></a>.</li>
   <li><b>[Feb. 2026]</b> Our paper about human-robot interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE ICHMS 2026</b></a>.</li>
-  <li><b>[Mar. 2026]</b> I joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctal researcher.</li>
+  <li><b>[Mar. 2026]</b> I joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctoral researcher.</li>
   <li><b>[Feb. 2026]</b> Our paper about physics-based two-character interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>Eurographics 2026</b></a>.</li>
   <li><b>[Sept. 2025]</b> I've successfully passed PhD viva</li>
-  <li><b>[Aug. 2025]</b> Our paper about two-character interaction in-between is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH Aisa 2025</b></a>.</li>
+  <li><b>[Aug. 2025]</b> Our paper about two-character interaction in-between is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH Asia 2025</b></a>.</li>
   <li><b>[July 2025]</b> Our paper about reactive motion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>Computer Graphics Forum</b></a>.</li>
   <li><b>[June 2025]</b> Our survey paper about diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>Pattern Recognition</b></a>.</li>
   <li><b>[May 2025]</b> I work as a part-time <a style="color: rgb(252, 151, 0)"><b>Research Assistant</b></a> in Human-Robot Interaction Project, collaborating with researchers from Durham University and the <a href="https://smuhci.com/" target="_blank">Singapore Management University</a>.</li>
@@ -57,7 +72,7 @@ Postdoc at Inria Rennes, focusing on multi-character/multi-agent/crowd modelling
     <li><b>[Oct. 2023]</b> I am involved in the teaching of Data Analytics in Action and Learning from Data as Demonstrator.</li>
     <li><b>[July 2023]</b> Our paper about adversarial attack against human action recognition is accepted by <a style="color: rgb(252, 151, 0)"><b>ICCV 2023</b></a>.</li>
     <li><b>[Apr. 2023]</b> I start to co-supervise a PhD student with <a href="https://hubertshum.com/" target="_blank">Prof. Hubert P. H. Shum</a>.</li>
-    <li><b>[Dec. 2022]</b> Our paper about stylized motion generation with diffusio models is accepted by <a style="color: rgb(252, 151, 0)"><b>GRAPP 2023</b></a>.</li>
+    <li><b>[Dec. 2022]</b> Our paper about stylized motion generation with diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>GRAPP 2023</b></a>.</li>
     <li><b>[Oct. 2022]</b> Our paper about stylized 3D shape generation by transferring learning is accepted by <a style="color: rgb(252, 151, 0)"><b>VRST 2022</b></a>.</li>
     <li><b>[Oct. 2022]</b> I am involved in the teaching of Programming (Gold), Data Science, and Computational Thinking as Demonstrator.</li>
     <li><b>[Sept. 2024]</b> Our paper about stylized locomotion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>MIG 2022</b></a>.</li>
