@@ -5,7 +5,7 @@
 
 {% for link in site.data.publications.main limit: publication_limit %}
 
-<li class="publication-item" data-year="{{ link.year }}" data-type="{{ link.type }}" data-topics="{{ link.topics | downcase }}" data-original-index="{{ forloop.index0 }}">
+<li id="pub-{{ link.title | slugify }}" class="publication-item" data-year="{{ link.year }}" data-type="{{ link.type }}" data-topics="{{ link.topics | downcase }}" data-original-index="{{ forloop.index0 }}">
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
     {% if link.image %}

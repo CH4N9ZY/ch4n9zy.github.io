@@ -1,4 +1,4 @@
-## Funding & Awards
+## Grants & Funding
 
 <div class="experience-list">
   <div class="experience-card">
@@ -8,8 +8,9 @@
       <figure class="fellowship-figure">
         <img src="../assets/img/bienvenue_plus_funding.jpg" alt="Bienvenüe+ MSCA-COFUND Fellowship funding information">
       </figure>
+      <p>This fellowship supports a 24-month independent research programme that I proposed and developed on socially intelligent multi-agent motion generation.</p>
       <ul>
-        <li>Role: Incoming Fellow / Project Lead</li>
+        <li>Role: Project Lead / Research Fellow</li>
         <li>Host Institution: Inria Rennes</li>
         <li>Host Team: VirtUs</li>
         <li>Duration: 24 months</li>

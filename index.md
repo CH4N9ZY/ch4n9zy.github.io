@@ -4,9 +4,12 @@ layout: homepage
 
 <nav class="section-nav" aria-label="Homepage sections">
   <a href="#home" class="section-nav-link is-active" data-section-target="home">Home</a>
+  <a href="#vision" class="section-nav-link" data-section-target="vision">Research Vision</a>
   <a href="#publication" class="section-nav-link" data-section-target="publication">Publication</a>
-  <a href="#grants" class="section-nav-link" data-section-target="grants">Funding & Awards</a>
+  <a href="#projects" class="section-nav-link" data-section-target="projects">Projects</a>
+  <a href="#grants" class="section-nav-link" data-section-target="grants">Grants & Funding</a>
   <a href="#teaching" class="section-nav-link" data-section-target="teaching">Supervision & Teaching</a>
+  <a href="#service" class="section-nav-link" data-section-target="service">Talks & Service</a>
   <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
     <i class="fa-solid fa-moon" aria-hidden="true"></i>
   </button>
@@ -34,6 +37,12 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
     <li><strong>Research areas:</strong> Multi-character interaction · Crowd modelling · Generative AI · Embodied agents</li>
   </ul>
   <p>Bienvenüe+ is an international postdoctoral fellowship programme co-funded by the European Union's Horizon Europe Marie Skłodowska-Curie Actions COFUND programme, Région Bretagne, and participating host institutions.</p>
+</div>
+
+<div class="fellowship-card">
+  <h3>For Prospective Collaboration</h3>
+  <p>I welcome collaborations on socially intelligent virtual humans, multi-agent motion generation, character animation, crowd behaviour, human-robot interaction, and trustworthy embodied AI.</p>
+  <p>I am especially interested in projects that connect generative motion models with interactive, physically grounded, and socially aware agents in shared human environments.</p>
 </div>
 
 ## Research Interests
@@ -86,6 +95,12 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
 
   </div>
 
+  <div id="vision" class="homepage-panel" data-section-panel="vision" markdown="1">
+
+{% include_relative _includes/research-vision.md %}
+
+  </div>
+
   <div id="publication" class="homepage-panel" data-section-panel="publication" markdown="1">
 
 <h2 class="publication-heading" data-publication-heading>Research Publications - All</h2>
@@ -129,9 +144,21 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
 
   </div>
 
+  <div id="projects" class="homepage-panel" data-section-panel="projects" markdown="1">
+
+{% include_relative _includes/research-projects.md %}
+
+  </div>
+
   <div id="teaching" class="homepage-panel" data-section-panel="teaching" markdown="1">
 
 {% include_relative _includes/teaching.md %}
+
+  </div>
+
+  <div id="service" class="homepage-panel" data-section-panel="service" markdown="1">
+
+{% include_relative _includes/service.md %}
 
   </div>
 </div>

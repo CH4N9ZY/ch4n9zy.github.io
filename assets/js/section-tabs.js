@@ -56,10 +56,31 @@ function getInitialTheme() {
 
 function getHomepageSectionFromHash() {
   const section = window.location.hash.replace("#", "");
+  if (section.indexOf("pub-") === 0) {
+    return "publication";
+  }
+
   const panel = Array.from(document.querySelectorAll("[data-section-panel]")).find(
     (item) => item.dataset.sectionPanel === section
   );
   return panel ? section : "home";
+}
+
+function resetPublicationFilters() {
+  const heading = document.querySelector("[data-publication-heading]");
+
+  document.querySelectorAll(".publication-item").forEach((item) => {
+    item.hidden = false;
+  });
+
+  document.querySelectorAll("[data-topic-filter]").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.topicFilter === "all");
+  });
+  document.querySelectorAll("[data-year-filter]").forEach((button) => button.classList.remove("is-active"));
+
+  if (heading) {
+    heading.textContent = "Research Publications - All";
+  }
 }
 
 function filterPublications(topic) {
@@ -111,6 +132,26 @@ function scrollToPublicationResults() {
   }
 }
 
+function scrollToPublicationItem(publicationId) {
+  const target = document.getElementById(publicationId);
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function openPublicationItem(publicationId) {
+  if (!publicationId) {
+    return;
+  }
+
+  activateHomepageSection("publication");
+  resetPublicationFilters();
+  history.pushState(null, "", `#${publicationId}`);
+  window.requestAnimationFrame(() => {
+    scrollToPublicationItem(publicationId);
+  });
+}
+
 function initPublicationControls() {
   document.querySelectorAll("[data-topic-filter]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -123,12 +164,27 @@ function initPublicationControls() {
       filterPublicationsByYear(button.dataset.yearFilter);
     });
   });
+
+  document.querySelectorAll("[data-publication-target]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      openPublicationItem(link.dataset.publicationTarget);
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   setTheme(getInitialTheme());
   activateHomepageSection(getHomepageSectionFromHash());
   initPublicationControls();
+
+  const initialPublicationId = window.location.hash.replace("#", "");
+  if (initialPublicationId.indexOf("pub-") === 0) {
+    resetPublicationFilters();
+    window.requestAnimationFrame(() => {
+      scrollToPublicationItem(initialPublicationId);
+    });
+  }
 
   document.querySelectorAll("[data-section-target]").forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -150,4 +206,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("hashchange", () => {
   activateHomepageSection(getHomepageSectionFromHash());
+  const publicationId = window.location.hash.replace("#", "");
+  if (publicationId.indexOf("pub-") === 0) {
+    resetPublicationFilters();
+    window.requestAnimationFrame(() => {
+      scrollToPublicationItem(publicationId);
+    });
+  }
 });
