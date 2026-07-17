@@ -390,6 +390,197 @@
   top: 150px;
 }
 
+.vision-orbit-wrap {
+  min-width: 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.vision-orbit-stage {
+  position: relative;
+  width: min(100%, 560px);
+  height: 360px;
+  margin: 0 auto;
+  color: #043361;
+  perspective: 900px;
+}
+
+.vision-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgba(4, 51, 97, 0.38);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(62deg) rotateZ(-24deg);
+  box-shadow: 0 18px 34px rgba(4, 51, 97, 0.12);
+}
+
+.vision-ring-shadow {
+  width: 238px;
+  height: 238px;
+  border-color: rgba(4, 51, 97, 0.16);
+  transform: translate(-50%, -50%) rotateX(62deg) rotateZ(-24deg) translateZ(-54px);
+  box-shadow: none;
+}
+
+.vision-axis-line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 330px;
+  height: 2px;
+  transform-origin: center;
+  color: #043361;
+  background: currentColor;
+}
+
+.vision-axis-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -4px;
+  border-left: 9px solid currentColor;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.orbit-axis-realism {
+  color: #8b2f5f;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.orbit-axis-scale {
+  color: #0a6b63;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.orbit-axis-reasoning {
+  color: #7b4f00;
+  transform: translate(-50%, -50%) rotate(-36deg);
+}
+
+.orbit-axis-title,
+.orbit-axis-start,
+.orbit-axis-mid,
+.orbit-axis-end {
+  position: absolute;
+  padding: 2px 5px;
+  background: #f7f9fb;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.orbit-axis-title {
+  right: -12px;
+  top: -28px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.orbit-axis-start {
+  left: -12px;
+  top: 10px;
+}
+
+.orbit-axis-mid {
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+
+.orbit-axis-end {
+  right: -12px;
+  top: 10px;
+}
+
+.orbit-axis-realism .orbit-axis-start,
+.orbit-axis-realism .orbit-axis-mid,
+.orbit-axis-realism .orbit-axis-end,
+.orbit-axis-realism .orbit-axis-title {
+  transform: rotate(90deg);
+}
+
+.orbit-axis-realism .orbit-axis-mid {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.orbit-axis-reasoning .orbit-axis-start,
+.orbit-axis-reasoning .orbit-axis-mid,
+.orbit-axis-reasoning .orbit-axis-end,
+.orbit-axis-reasoning .orbit-axis-title {
+  transform: rotate(36deg);
+}
+
+.orbit-axis-reasoning .orbit-axis-mid {
+  transform: translateX(-50%) rotate(36deg);
+}
+
+.vision-core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 68px;
+  padding: 0 10px;
+  border: 1px solid rgba(4, 51, 97, 0.24);
+  border-radius: 8px;
+  color: #043361;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 22px rgba(4, 51, 97, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.18;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.vision-orbit-label {
+  position: absolute;
+  z-index: 4;
+  padding: 4px 9px;
+  border: 1px solid rgba(4, 51, 97, 0.24);
+  border-radius: 999px;
+  color: #043361;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 5px 14px rgba(4, 51, 97, 0.1);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.orbit-label-top {
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+}
+
+.orbit-label-right {
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.orbit-label-bottom {
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+}
+
+.orbit-label-left {
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .fellowship-card {
   margin: 24px 0 26px;
   padding: 16px 18px;
@@ -651,6 +842,34 @@
 
   .vision-node {
     width: auto;
+  }
+
+  .vision-orbit-stage {
+    width: 320px;
+    max-width: 100%;
+    height: 320px;
+  }
+
+  .vision-ring {
+    width: 218px;
+    height: 218px;
+  }
+
+  .vision-ring-shadow {
+    width: 176px;
+    height: 176px;
+  }
+
+  .vision-axis-line {
+    width: 248px;
+  }
+
+  .orbit-label-right {
+    right: 4px;
+  }
+
+  .orbit-label-left {
+    left: 4px;
   }
 
   .experience-card {
@@ -1332,9 +1551,18 @@ html[data-theme="light"] .vision-cube-card {
 }
 
 html[data-theme="light"] .vision-node,
-html[data-theme="light"] .vision-frame-label {
+html[data-theme="light"] .vision-frame-label,
+html[data-theme="light"] .vision-orbit-label,
+html[data-theme="light"] .vision-core {
   color: #222;
   background: rgba(255, 255, 255, 0.9);
+}
+
+html[data-theme="light"] .orbit-axis-title,
+html[data-theme="light"] .orbit-axis-start,
+html[data-theme="light"] .orbit-axis-mid,
+html[data-theme="light"] .orbit-axis-end {
+  background: #f7f9fb;
 }
 
 html[data-theme="light"] .experience-card {
@@ -1421,10 +1649,29 @@ html[data-theme="dark"] .vision-plane {
 }
 
 html[data-theme="dark"] .vision-node,
-html[data-theme="dark"] .vision-frame-label {
+html[data-theme="dark"] .vision-frame-label,
+html[data-theme="dark"] .vision-orbit-label,
+html[data-theme="dark"] .vision-core {
   color: #f4f4f4;
   background: rgba(36, 38, 49, 0.92);
   border-color: rgba(156, 198, 255, 0.3);
+}
+
+html[data-theme="dark"] .vision-ring {
+  border-color: rgba(156, 198, 255, 0.42);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .vision-ring-shadow {
+  border-color: rgba(156, 198, 255, 0.18);
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .orbit-axis-title,
+html[data-theme="dark"] .orbit-axis-start,
+html[data-theme="dark"] .orbit-axis-mid,
+html[data-theme="dark"] .orbit-axis-end {
+  background: #282a36;
 }
 
 html[data-theme="dark"] .experience-card {

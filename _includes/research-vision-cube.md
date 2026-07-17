@@ -4,44 +4,38 @@
     <p>My research studies human motion intelligence across <strong>Realism</strong>, <strong>Scale</strong>, and <strong>Reasoning</strong>, framed by trustworthy, safe, controllable, and interpretable deployment.</p>
   </div>
 
-  <div class="vision-cube-wrap">
-    <div class="vision-cube-frame">
-      <div class="vision-plane vision-plane-back"></div>
-      <div class="vision-plane vision-plane-bottom"></div>
-      <div class="vision-plane vision-plane-side"></div>
+  <div class="vision-orbit-wrap">
+    <div class="vision-orbit-stage">
+      <div class="vision-ring"></div>
+      <div class="vision-ring vision-ring-shadow"></div>
 
-      <div class="vision-axis vision-axis-realism">
-        <span class="vision-axis-title">Realism</span>
-        <span class="vision-axis-start">Kinematics</span>
-        <span class="vision-axis-mid">Physics</span>
-        <span class="vision-axis-end">Embodiment</span>
+      <div class="vision-orbit-label orbit-label-top">Trustworthy</div>
+      <div class="vision-orbit-label orbit-label-right">Safe</div>
+      <div class="vision-orbit-label orbit-label-bottom">Controllable</div>
+      <div class="vision-orbit-label orbit-label-left">Interpretable</div>
+
+      <div class="vision-axis-line orbit-axis-realism">
+        <span class="orbit-axis-title">Realism</span>
+        <span class="orbit-axis-start">Kinematics</span>
+        <span class="orbit-axis-mid">Physics</span>
+        <span class="orbit-axis-end">Embodiment</span>
       </div>
 
-      <div class="vision-axis vision-axis-scale">
-        <span class="vision-axis-title">Scale</span>
-        <span class="vision-axis-start">Individual</span>
-        <span class="vision-axis-mid">Interaction</span>
-        <span class="vision-axis-end">Crowd</span>
+      <div class="vision-axis-line orbit-axis-scale">
+        <span class="orbit-axis-title">Scale</span>
+        <span class="orbit-axis-start">Individual</span>
+        <span class="orbit-axis-mid">Interaction</span>
+        <span class="orbit-axis-end">Crowd</span>
       </div>
 
-      <div class="vision-axis vision-axis-reasoning">
-        <span class="vision-axis-title">Reasoning</span>
-        <span class="vision-axis-start">Generation</span>
-        <span class="vision-axis-mid">Understanding</span>
-        <span class="vision-axis-end">Intervention</span>
+      <div class="vision-axis-line orbit-axis-reasoning">
+        <span class="orbit-axis-title">Reasoning</span>
+        <span class="orbit-axis-start">Generation</span>
+        <span class="orbit-axis-mid">Understanding</span>
+        <span class="orbit-axis-end">Intervention</span>
       </div>
 
-      <div class="vision-node node-synthesis">Motion<br>Synthesis</div>
-      <div class="vision-node node-contact">Contact-Rich<br>Interaction</div>
-      <div class="vision-node node-multi">Multi-Character<br>Interaction</div>
-      <div class="vision-node node-attack">Adversarial<br>Robustness</div>
-      <div class="vision-node node-crowd">Dense Crowd<br>Modelling</div>
-      <div class="vision-node node-hri">Embodied<br>Agents</div>
-
-      <div class="vision-frame-label vision-frame-label-top">Trustworthy</div>
-      <div class="vision-frame-label vision-frame-label-right">Safe</div>
-      <div class="vision-frame-label vision-frame-label-bottom">Controllable</div>
-      <div class="vision-frame-label vision-frame-label-left">Interpretable</div>
+      <div class="vision-core">Human Motion<br>Intelligence</div>
     </div>
   </div>
 </div>
