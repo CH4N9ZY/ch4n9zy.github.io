@@ -553,10 +553,20 @@
   display: block;
 }
 
+.homepage-panel[data-section-panel="home"] {
+  width: calc(100vw - 340px);
+  max-width: calc(100vw - 340px);
+}
+
 @media print, screen and (max-width: 480px) {
   .home-layout {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .homepage-panel[data-section-panel="home"] {
+    width: auto;
+    max-width: none;
   }
 
   .vision-cube-card {
@@ -869,8 +879,8 @@ a:hover small {
 }
 
 .wrapper {
-  width:calc(100vw - 40px);
-  max-width:none;
+  width:1180px;
+  max-width:calc(100vw - 40px);
   margin:0 20px;
 }
 
@@ -991,7 +1001,7 @@ header ul a strong {
 }
 
 section {
-  width:calc(100% - 300px);
+  width:880px;
   float:right;
   padding-top:5.5em;
   padding-bottom:50px;
@@ -1022,6 +1032,11 @@ footer {
   .home-layout {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .homepage-panel[data-section-panel="home"] {
+    width: auto;
+    max-width: none;
   }
 
   .vision-cube-card {
