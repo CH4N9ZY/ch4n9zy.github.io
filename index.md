@@ -49,9 +49,9 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
 
 ## Research Interests
 
-- **Research Vision:** Data-informed generative models for virtual humans, embodied agents, and dense crowds
-- **Core Themes:** Dense crowd dynamics, multi-character interaction, crowd-aware behaviour, human-robot and human-agent interaction
-- **Methods:** Generative and diffusion models, multiscale representation learning, probabilistic modelling, physics-based and data-driven animation
+- **Research Vision:** Data-informed and trustworthy generative models for virtual humans, embodied agents, and dense crowds
+- **Core Themes:** Dense crowd dynamics, multi-character interaction, crowd-aware behaviour, trustworthy motion intelligence, human-robot and human-agent interaction
+- **Methods:** Generative and diffusion models, multiscale representation learning, probabilistic modelling, adversarial robustness, physics-based and data-driven animation
 
 ## News
 

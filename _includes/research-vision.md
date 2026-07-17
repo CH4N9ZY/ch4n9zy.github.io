@@ -26,4 +26,12 @@ My long-term research vision is to build data-informed models of virtual humans,
       <p>Beyond forward prediction, I am interested in inverse reasoning: using learned generative models to explore how environmental or organisational arrangements may influence desired crowd patterns. This supports interpretable, uncertainty-aware analysis for safer planning and intervention in high-density public spaces.</p>
     </div>
   </div>
+
+  <div class="experience-card">
+    <div class="experience-badge">Vision 4</div>
+    <div class="experience-content">
+      <h4>Trustworthy Motion Intelligence</h4>
+      <p>Building on my work on adversarial attacks against human motion and action recognition, I am interested in the robustness, controllability, and reliability of motion models. This includes understanding how generative and recognition systems behave under perturbations, ambiguous observations, and safety-critical deployment conditions.</p>
+    </div>
+  </div>
 </div>
