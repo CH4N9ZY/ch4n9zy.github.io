@@ -1,7 +1,7 @@
 function activateHomepageSection(sectionName) {
   const section = sectionName || "home";
   const panels = document.querySelectorAll("[data-section-panel]");
-  const navLinks = document.querySelectorAll("[data-section-target]");
+  const navLinks = document.querySelectorAll(".section-nav [data-section-target]");
 
   panels.forEach((panel) => {
     panel.classList.toggle("is-active", panel.dataset.sectionPanel === section);

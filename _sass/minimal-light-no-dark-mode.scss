@@ -63,6 +63,50 @@
   background: #ffffff;
 }
 
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: 30px;
+  align-items: start;
+}
+
+.home-main {
+  min-width: 0;
+}
+
+.home-sidebar {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+
+.home-sidebar .fellowship-card,
+.home-sidebar-section {
+  margin: 0;
+  padding: 14px 16px;
+  border-left: 4px solid #043361;
+  background: #f7f9fb;
+}
+
+.home-sidebar-section h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.home-sidebar-section ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.home-sidebar-section li {
+  margin-bottom: 8px;
+}
+
+.home-news li {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .fellowship-card {
   margin: 24px 0 26px;
   padding: 16px 18px;
@@ -227,6 +271,11 @@
 }
 
 @media print, screen and (max-width: 480px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .experience-card {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -639,6 +688,11 @@ footer {
 
 @media print, screen and (max-width: 960px) {
 
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
   .pub-row {
   display: flex;
   align-items: center;}
@@ -805,7 +859,8 @@ html[data-theme="light"] .theme-toggle {
   background: #f4f4f4;
 }
 
-html[data-theme="light"] .fellowship-card {
+html[data-theme="light"] .fellowship-card,
+html[data-theme="light"] .home-sidebar-section {
   border-left-color: #043361;
   background: #f7f9fb;
 }
@@ -881,7 +936,8 @@ html[data-theme="dark"] .theme-toggle {
   background: #555;
 }
 
-html[data-theme="dark"] .fellowship-card {
+html[data-theme="dark"] .fellowship-card,
+html[data-theme="dark"] .home-sidebar-section {
   border-left-color: rgb(62, 183, 240);
   background: #282a36;
 }
