@@ -4,44 +4,39 @@
     <p>My research studies human motion intelligence across <strong>Realism</strong>, <strong>Scale</strong>, and <strong>Reasoning</strong>, framed by trustworthy, controllable, and interpretable deployment.</p>
   </div>
 
-  <div class="vision-prism-wrap">
-    <div class="vision-prism-stage">
-      <div class="vision-prism-plane plane-trustworthy"></div>
-      <div class="vision-prism-plane plane-controllable"></div>
-      <div class="vision-prism-plane plane-interpretable"></div>
-
-      <div class="vision-prism-label label-trustworthy">Trustworthy</div>
-      <div class="vision-prism-label label-controllable">Controllable</div>
-      <div class="vision-prism-label label-interpretable">Interpretable</div>
-
-      <div class="prism-axis axis-realism">
-        <span class="axis-title">Realism</span>
-        <span class="axis-start">Kinematics</span>
-        <span class="axis-mid">Physics</span>
-        <span class="axis-end">Embodiment</span>
-        <span class="axis-dot dot-start"></span>
-        <span class="axis-dot dot-mid"></span>
-        <span class="axis-dot dot-end"></span>
+  <div class="vision-system-wrap">
+    <div class="vision-system-stage">
+      <div class="vision-surface surface-trustworthy">
+        <span>Trustworthy</span>
+      </div>
+      <div class="vision-surface surface-controllable">
+        <span>Controllable</span>
+      </div>
+      <div class="vision-surface surface-interpretable">
+        <span>Interpretable</span>
       </div>
 
-      <div class="prism-axis axis-scale">
-        <span class="axis-title">Scale</span>
-        <span class="axis-start">Individual</span>
-        <span class="axis-mid">Interaction</span>
-        <span class="axis-end">Crowd</span>
-        <span class="axis-dot dot-start"></span>
-        <span class="axis-dot dot-mid"></span>
-        <span class="axis-dot dot-end"></span>
+      <div class="vision-system-core">Human Motion<br>Intelligence</div>
+
+      <div class="system-axis system-axis-realism">
+        <span class="system-axis-title">Realism</span>
+        <span class="system-tick tick-one">Kinematics</span>
+        <span class="system-tick tick-two">Physics</span>
+        <span class="system-tick tick-three">Embodiment</span>
       </div>
 
-      <div class="prism-axis axis-reasoning">
-        <span class="axis-title">Reasoning</span>
-        <span class="axis-start">Generation</span>
-        <span class="axis-mid">Understanding</span>
-        <span class="axis-end">Intervention</span>
-        <span class="axis-dot dot-start"></span>
-        <span class="axis-dot dot-mid"></span>
-        <span class="axis-dot dot-end"></span>
+      <div class="system-axis system-axis-scale">
+        <span class="system-axis-title">Scale</span>
+        <span class="system-tick tick-one">Individual</span>
+        <span class="system-tick tick-two">Interaction</span>
+        <span class="system-tick tick-three">Crowd</span>
+      </div>
+
+      <div class="system-axis system-axis-reasoning">
+        <span class="system-axis-title">Reasoning</span>
+        <span class="system-tick tick-one">Generation</span>
+        <span class="system-tick tick-two">Understanding</span>
+        <span class="system-tick tick-three">Intervention</span>
       </div>
     </div>
   </div>
