@@ -18,9 +18,6 @@ layout: homepage
 <div class="homepage-panels">
   <div id="home" class="homepage-panel is-active" data-section-panel="home" markdown="1">
 
-<div class="home-layout" markdown="1">
-<div class="home-main" markdown="1">
-
 ## About Me
 
 I am a Postdoctoral Researcher at Inria Rennes and an incoming Bienvenüe+ MSCA-COFUND Fellow. My research develops computational models for socially intelligent virtual humans, embodied agents, and dense crowds, with a focus on multi-character interaction, crowd dynamics, generative motion modelling, and human-centred AI.
@@ -44,26 +41,17 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
   <p><a href="#projects" data-section-target="projects">View the GROWD project overview</a></p>
 </div>
 
-</div>
-<aside class="home-sidebar" markdown="1">
-
 <div class="fellowship-card">
   <h3>For Prospective Collaboration</h3>
   <p>I welcome collaborations on dense crowd modelling, generative models for crowd dynamics, multiscale motion observation, character animation, human-robot interaction, public-space safety, and trustworthy embodied AI.</p>
   <p>I am especially interested in projects that connect fine-grained human motion, coarse-grained video observations, probabilistic generative modelling, and domain expertise from event organisation or urban planning for safer and more interpretable analysis of shared public spaces.</p>
 </div>
 
-<div class="home-sidebar-section" markdown="1">
-
 ## Research Interests
 
 - **Research Vision:** Data-informed and trustworthy generative models for virtual humans, embodied agents, and dense crowds
 - **Core Themes:** Dense crowd dynamics, multi-character interaction, crowd-aware behaviour, trustworthy motion intelligence, human-robot and human-agent interaction
 - **Methods:** Generative and diffusion models, multiscale representation learning, probabilistic modelling, adversarial robustness, physics-based and data-driven animation
-
-</div>
-
-<div class="home-sidebar-section home-news" markdown="1">
 
 ## News
 
@@ -106,10 +94,6 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
     <li><b>[Jan. 2022]</b> I am involved in the teaching of Programming for Data Science as Demonstrator.</li>
 </details>
 </ul>
-
-</div>
-</aside>
-</div>
 
   </div>
 
