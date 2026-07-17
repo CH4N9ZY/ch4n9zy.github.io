@@ -59,6 +59,15 @@ function getHomepageSectionFromHash() {
   if (section.indexOf("pub-") === 0) {
     return "publication";
   }
+  if (section.indexOf("project-") === 0) {
+    return "projects";
+  }
+  if (section.indexOf("funding-") === 0) {
+    return "grants";
+  }
+  if (section.indexOf("supervision-") === 0) {
+    return "teaching";
+  }
 
   const panel = Array.from(document.querySelectorAll("[data-section-panel]")).find(
     (item) => item.dataset.sectionPanel === section
@@ -139,6 +148,13 @@ function scrollToPublicationItem(publicationId) {
   }
 }
 
+function scrollToAnchorItem(anchorId) {
+  const target = document.getElementById(anchorId);
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
 function openPublicationItem(publicationId) {
   if (!publicationId) {
     return;
@@ -184,6 +200,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.requestAnimationFrame(() => {
       scrollToPublicationItem(initialPublicationId);
     });
+  } else if (initialPublicationId) {
+    window.requestAnimationFrame(() => {
+      scrollToAnchorItem(initialPublicationId);
+    });
   }
 
   document.querySelectorAll("[data-section-target]").forEach((link) => {
@@ -206,11 +226,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("hashchange", () => {
   activateHomepageSection(getHomepageSectionFromHash());
-  const publicationId = window.location.hash.replace("#", "");
-  if (publicationId.indexOf("pub-") === 0) {
+  const anchorId = window.location.hash.replace("#", "");
+  if (anchorId.indexOf("pub-") === 0) {
     resetPublicationFilters();
     window.requestAnimationFrame(() => {
-      scrollToPublicationItem(publicationId);
+      scrollToPublicationItem(anchorId);
+    });
+  } else {
+    window.requestAnimationFrame(() => {
+      scrollToAnchorItem(anchorId);
     });
   }
 });

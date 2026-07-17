@@ -1,7 +1,7 @@
 ## Grants & Funding
 
 <div class="experience-list">
-  <div class="experience-card">
+  <div id="funding-growd" class="experience-card">
     <div class="experience-badge">Fellowship</div>
     <div class="experience-content">
       <h4>GROWD: Generative Modelling of Dense Crowds under Multiscale Observations, 2027 - 2028</h4>
@@ -18,11 +18,11 @@
         <li>Research Direction: Dense crowd modelling, generative models, and crowd dynamics</li>
         <li>Core Aim: Integrating sparse, local, fine-grained agent-level observations with dense, global, coarse-grained video-derived measurements for uncertainty-aware crowd analysis.</li>
       </ul>
-      <p><a href="#projects" data-section-target="projects">View the GROWD project overview</a></p>
+      <p><a href="#project-growd">View the GROWD project overview</a></p>
     </div>
   </div>
 
-  <div class="experience-card">
+  <div id="funding-smu-du" class="experience-card">
     <div class="experience-badge">Project</div>
     <div class="experience-content">
       <h4>Cross-Institutional Research Capacity Development in Human-Robot Interaction, 2025 - 2026</h4>
@@ -35,6 +35,7 @@
         <li>Role: Research Assistant / Project Contributor</li>
         <li>Responsibilities included reviewing diffusion models in human-robot interaction, deploying trajectory planning experiments, managing the progress of another research assistant, and communicating with the SMU team on behalf of the Durham side.</li>
       </ul>
+      <p><a href="#project-smu-du">View the SMU-DU project overview</a></p>
     </div>
   </div>
 </div>

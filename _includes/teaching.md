@@ -16,7 +16,7 @@
     </div>
   </div>
 
-  <div class="experience-card">
+  <div id="supervision-final-year-styled-walking" class="experience-card">
     <div class="experience-badge">Supervision</div>
     <div class="experience-content">
       <h4>Final Year Project Supervision</h4>
@@ -25,6 +25,7 @@
         <li>The project led to the paper <a href="#pub-denoising-diffusion-probabilistic-models-for-styled-walking-synthesis" data-publication-target="pub-denoising-diffusion-probabilistic-models-for-styled-walking-synthesis"><b>Denoising Diffusion Probabilistic Models for Styled Walking Synthesis</b></a>.</li>
         <li>The work connects undergraduate research supervision with my broader interests in generative human motion and character animation.</li>
       </ul>
+      <p><a href="#project-final-year-styled-walking">View the final-year project overview</a></p>
     </div>
   </div>
 

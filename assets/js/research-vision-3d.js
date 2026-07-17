@@ -6,6 +6,95 @@ const mounts = document.querySelectorAll("[data-vision-3d]");
 const axisLength = 4.2;
 const axisColor = 0x0b587b;
 const dotColor = 0x177392;
+const publicationColor = 0xf59f00;
+const projectColor = 0x6c63ff;
+
+const researchItems = [
+  {
+    kind: "publication",
+    title: "Quality-Preserving Imperceptible Adversarial Attack on Skeleton-based Human Action Recognition",
+    href: "#pub-quality-preserving-imperceptible-adversarial-attack-on-skeleton-based-human-action-recognition",
+    position: [1.55, 1.15, 3.38],
+  },
+  {
+    kind: "publication",
+    title: "ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations",
+    href: "#pub-art-adaptive-relational-transformer-for-pedestrian-trajectory-prediction-with-temporal-aware-relations",
+    position: [3.55, 1.25, 2.18],
+  },
+  {
+    kind: "publication",
+    title: "Physics-Based Motion Tracking of Contact-Rich Interacting Characters",
+    href: "#pub-physics-based-motion-tracking-of-contact-rich-interacting-characters",
+    position: [2.35, 2.55, 1.15],
+  },
+  {
+    kind: "publication",
+    title: "Motion In-Betweening for Densely Interacting Characters",
+    href: "#pub-motion-in-betweening-for-densely-interacting-characters",
+    position: [2.55, 2.25, 1.55],
+  },
+  {
+    kind: "publication",
+    title: "Large-Scale Multi-Character Interaction Synthesis",
+    href: "#pub-large-scale-multi-character-interaction-synthesis",
+    position: [3.05, 1.65, 1.05],
+  },
+  {
+    kind: "publication",
+    title: "On the Design Fundamentals of Diffusion Models",
+    href: "#pub-on-the-design-fundamentals-of-diffusion-models",
+    position: [0.92, 0.82, 0.78],
+  },
+  {
+    kind: "publication",
+    title: "Real-time and Controllable Reactive Motion Synthesis via Intention Guidance",
+    href: "#pub-real-time-and-controllable-reactive-motion-synthesis-via-intention-guidance",
+    position: [2.2, 1.62, 3.18],
+  },
+  {
+    kind: "publication",
+    title: "Hard No-Box Adversarial Attack on Skeleton-Based Human Action Recognition with Skeleton-Motion-Informed Gradient",
+    href: "#pub-hard-no-box-adversarial-attack-on-skeleton-based-human-action-recognition-with-skeleton-motion-informed-gradient",
+    position: [1.25, 1.18, 3.62],
+  },
+  {
+    kind: "publication",
+    title: "Unifying Human Motion Synthesis and Style Transfer with Denoising Diffusion Probabilistic Models",
+    href: "#pub-unifying-human-motion-synthesis-and-style-transfer-with-denoising-diffusion-probabilistic-models",
+    position: [1.02, 1.02, 1.15],
+  },
+  {
+    kind: "publication",
+    title: "3D Reconstruction of Sculptures from Single Images via Unsupervised Domain Adaptation on Implicit Models",
+    href: "#pub-3d-reconstruction-of-sculptures-from-single-images-via-unsupervised-domain-adaptation-on-implicit-models",
+    position: [0.72, 0.9, 2.12],
+  },
+  {
+    kind: "publication",
+    title: "Denoising Diffusion Probabilistic Models for Styled Walking Synthesis",
+    href: "#pub-denoising-diffusion-probabilistic-models-for-styled-walking-synthesis",
+    position: [0.82, 0.85, 1.05],
+  },
+  {
+    kind: "project",
+    title: "GROWD Fellowship",
+    href: "#project-growd",
+    position: [3.78, 1.45, 3.7],
+  },
+  {
+    kind: "project",
+    title: "SMU-DU Human-Robot Interaction Project",
+    href: "#project-smu-du",
+    position: [2.68, 2.72, 2.58],
+  },
+  {
+    kind: "project",
+    title: "Final Year Project: Styled Walking Synthesis",
+    href: "#project-final-year-styled-walking",
+    position: [0.92, 0.95, 1.38],
+  },
+];
 
 function isDarkTheme() {
   const explicitTheme = document.documentElement.getAttribute("data-theme");
@@ -112,14 +201,33 @@ function makePlane(width, height, color, opacity) {
   );
 }
 
+function makeResearchMarker(item) {
+  const material = new THREE.MeshBasicMaterial({
+    color: item.kind === "project" ? projectColor : publicationColor,
+    transparent: true,
+    opacity: 0.92,
+  });
+  const marker = item.kind === "project"
+    ? new THREE.Mesh(new THREE.BoxGeometry(0.18, 0.18, 0.18), material)
+    : new THREE.Mesh(new THREE.SphereGeometry(0.105, 28, 16), material);
+  marker.position.set(item.position[0], item.position[1], item.position[2]);
+  marker.userData = {
+    href: item.href,
+    title: item.title,
+    kind: item.kind,
+    interactive: true,
+  };
+  return marker;
+}
+
 function initVisionScene(mount) {
   if (mount.visionDispose) {
     mount.visionDispose();
   }
 
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
-  camera.position.set(5.5, 4.4, 6.2);
+  const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+  camera.position.set(7.8, 6.4, 8.8);
 
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
@@ -135,12 +243,20 @@ function initVisionScene(mount) {
   controls.enableDamping = true;
   controls.dampingFactor = 0.08;
   controls.enablePan = false;
-  controls.minDistance = 5.2;
-  controls.maxDistance = 10;
+  controls.minDistance = 5.6;
+  controls.maxDistance = 12.4;
   controls.target.set(1.7, 1.55, 1.35);
+  camera.position.copy(
+    new THREE.Vector3(5.9, 4.85, 7.45)
+      .normalize()
+      .multiplyScalar(controls.maxDistance)
+      .add(controls.target)
+  );
+  controls.update();
 
   const root = new THREE.Group();
   scene.add(root);
+  const interactiveObjects = [];
 
   const trustworthyPlane = makePlane(3.7, 3.2, 0xfff1a9, isDarkTheme() ? 0.16 : 0.34);
   trustworthyPlane.position.set(0, 1.72, 1.75);
@@ -160,6 +276,12 @@ function initVisionScene(mount) {
   root.add(makeAxis(new THREE.Vector3(0, 1, 0), axisLength, "Realism", ["Kinematics", "Physics", "Embodiment"]));
   root.add(makeAxis(new THREE.Vector3(0, 0, 1), axisLength, "Reasoning", ["Generation", "Understanding", "Intervention"]));
 
+  researchItems.forEach((item) => {
+    const marker = makeResearchMarker(item);
+    root.add(marker);
+    interactiveObjects.push(marker);
+  });
+
   const trustworthyLabel = makeTextSprite("Trustworthy", { fontSize: 40, fontWeight: 800, scale: 0.38 });
   trustworthyLabel.position.set(-0.18, 2.15, 2.95);
   root.add(trustworthyLabel);
@@ -172,9 +294,38 @@ function initVisionScene(mount) {
   interpretableLabel.position.set(3.0, 0.16, 3.05);
   root.add(interpretableLabel);
 
+  const raycaster = new THREE.Raycaster();
+  const pointer = new THREE.Vector2();
+  const pointerStart = new THREE.Vector2();
+  let activePointerId = null;
+
+  function setPointerFromEvent(event) {
+    const rect = renderer.domElement.getBoundingClientRect();
+    pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+    pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+  }
+
+  function getIntersectedItem(event) {
+    setPointerFromEvent(event);
+    raycaster.setFromCamera(pointer, camera);
+    return raycaster.intersectObjects(interactiveObjects, false)[0];
+  }
+
+  function openMarkerTarget(marker) {
+    if (!marker || !marker.userData.href) {
+      return;
+    }
+
+    if (window.location.hash === marker.userData.href) {
+      window.dispatchEvent(new Event("hashchange"));
+    } else {
+      window.location.hash = marker.userData.href;
+    }
+  }
+
   function resize() {
     const width = mount.clientWidth || 620;
-    const height = mount.clientHeight || 430;
+    const height = mount.clientHeight || 520;
     camera.aspect = width / height;
     camera.updateProjectionMatrix();
     renderer.setSize(width, height, false);
@@ -184,6 +335,39 @@ function initVisionScene(mount) {
   const resizeObserver = new ResizeObserver(resize);
   resizeObserver.observe(mount);
   window.addEventListener("resize", resize);
+
+  renderer.domElement.addEventListener("pointerdown", (event) => {
+    activePointerId = event.pointerId;
+    pointerStart.set(event.clientX, event.clientY);
+  });
+
+  renderer.domElement.addEventListener("pointermove", (event) => {
+    const hit = getIntersectedItem(event);
+    renderer.domElement.style.cursor = hit ? "pointer" : "grab";
+    mount.setAttribute("title", hit ? hit.object.userData.title : "Drag to rotate · Scroll to zoom");
+  });
+
+  renderer.domElement.addEventListener("pointerup", (event) => {
+    if (activePointerId !== event.pointerId) {
+      return;
+    }
+
+    activePointerId = null;
+    const dragDistance = pointerStart.distanceTo(new THREE.Vector2(event.clientX, event.clientY));
+    if (dragDistance > 5) {
+      return;
+    }
+
+    const hit = getIntersectedItem(event);
+    if (hit) {
+      openMarkerTarget(hit.object);
+    }
+  });
+
+  renderer.domElement.addEventListener("pointerleave", () => {
+    renderer.domElement.style.cursor = "grab";
+    mount.removeAttribute("title");
+  });
 
   let frameId = null;
 
