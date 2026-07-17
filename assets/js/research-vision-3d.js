@@ -8,7 +8,7 @@ const axisColor = 0x0b587b;
 const dotColor = 0x177392;
 const publicationColor = 0xf59f00;
 const projectColor = 0x6c63ff;
-const projectionColor = 0x12a8d8;
+const highlightRingColor = 0xffd166;
 
 const researchItems = [
   {
@@ -144,7 +144,7 @@ function makeTextSprite(text, options = {}) {
   return sprite;
 }
 
-function makeAxis(direction, length, label, ticks) {
+function makeAxis(direction, length, label, ticks, axisKey, tickRegistry) {
   const group = new THREE.Group();
   const dir = direction.clone().normalize();
   const origin = new THREE.Vector3(0, 0, 0);
@@ -184,6 +184,16 @@ function makeAxis(direction, length, label, ticks) {
     if (Math.abs(dir.z) > 0.8) offset.set(-0.2, 0.2, 0.22);
     tickLabel.position.copy(tickPosition.clone().add(offset));
     group.add(tickLabel);
+
+    if (tickRegistry) {
+      tickRegistry.push({
+        axisKey,
+        distance,
+        dot,
+        label: tickLabel,
+        baseLabelScale: tickLabel.scale.clone(),
+      });
+    }
   });
 
   return group;
@@ -243,35 +253,49 @@ function clearGroup(group) {
   }
 }
 
-function makeDashedLine(start, end) {
-  const geometry = new THREE.BufferGeometry().setFromPoints([start, end]);
-  const material = new THREE.LineDashedMaterial({
-    color: projectionColor,
-    dashSize: 0.08,
-    gapSize: 0.055,
-    transparent: true,
-    opacity: isDarkTheme() ? 0.86 : 0.74,
-    depthTest: false,
-  });
-  const line = new THREE.Line(geometry, material);
-  line.computeLineDistances();
-  line.renderOrder = 10;
-  return line;
-}
-
-function makeHighlightDot(position, radius, color = projectionColor) {
-  const dot = new THREE.Mesh(
-    new THREE.SphereGeometry(radius, 24, 12),
+function makeHighlightRing(position, radius = 0.17) {
+  const ring = new THREE.Mesh(
+    new THREE.RingGeometry(radius * 0.68, radius, 36),
     new THREE.MeshBasicMaterial({
-      color,
+      color: highlightRingColor,
       transparent: true,
       opacity: 0.96,
+      side: THREE.DoubleSide,
       depthTest: false,
     })
   );
-  dot.position.copy(position);
-  dot.renderOrder = 11;
-  return dot;
+  ring.position.copy(position);
+  ring.renderOrder = 12;
+  return ring;
+}
+
+function makeHighlightFrame(position, scale) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 256;
+  canvas.height = 92;
+  const context = canvas.getContext("2d");
+  context.strokeStyle = "#ffd166";
+  context.lineWidth = 8;
+  context.beginPath();
+  context.roundRect(8, 8, canvas.width - 16, canvas.height - 16, 28);
+  context.stroke();
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.minFilter = THREE.LinearFilter;
+  texture.generateMipmaps = false;
+
+  const frame = new THREE.Sprite(
+    new THREE.SpriteMaterial({
+      map: texture,
+      transparent: true,
+      opacity: 0.98,
+      depthTest: false,
+    })
+  );
+  frame.position.copy(position);
+  frame.scale.set(scale.x * 1.18, scale.y * 1.72, 1);
+  frame.renderOrder = 11;
+  return frame;
 }
 
 function initVisionScene(mount) {
@@ -311,6 +335,8 @@ function initVisionScene(mount) {
   const root = new THREE.Group();
   scene.add(root);
   const interactiveObjects = [];
+  const axisTicks = [];
+  let highlightedAxisTicks = [];
   const hoverGuide = new THREE.Group();
 
   const trustworthyPlane = makePlane(3.7, 3.2, 0xfff1a9, isDarkTheme() ? 0.16 : 0.34);
@@ -327,9 +353,9 @@ function initVisionScene(mount) {
   interpretablePlane.rotation.x = Math.PI / 2;
   root.add(interpretablePlane);
 
-  root.add(makeAxis(new THREE.Vector3(1, 0, 0), axisLength, "Scale", ["Individual", "Interaction", "Crowd"]));
-  root.add(makeAxis(new THREE.Vector3(0, 1, 0), axisLength, "Realism", ["Kinematics", "Physics", "Embodiment"]));
-  root.add(makeAxis(new THREE.Vector3(0, 0, 1), axisLength, "Reasoning", ["Generation", "Understanding", "Intervention"]));
+  root.add(makeAxis(new THREE.Vector3(1, 0, 0), axisLength, "Scale", ["Individual", "Interaction", "Crowd"], "x", axisTicks));
+  root.add(makeAxis(new THREE.Vector3(0, 1, 0), axisLength, "Realism", ["Kinematics", "Physics", "Embodiment"], "y", axisTicks));
+  root.add(makeAxis(new THREE.Vector3(0, 0, 1), axisLength, "Reasoning", ["Generation", "Understanding", "Intervention"], "z", axisTicks));
 
   researchItems.forEach((item) => {
     const marker = makeResearchMarker(item);
@@ -381,6 +407,26 @@ function initVisionScene(mount) {
     }
   }
 
+  function resetAxisHighlights() {
+    highlightedAxisTicks.forEach((tick) => {
+      tick.dot.scale.setScalar(1);
+      tick.label.scale.copy(tick.baseLabelScale);
+    });
+    highlightedAxisTicks = [];
+  }
+
+  function getNearestAxisTick(axisKey, value) {
+    return axisTicks
+      .filter((tick) => tick.axisKey === axisKey)
+      .reduce((nearest, tick) => {
+        if (!nearest) {
+          return tick;
+        }
+
+        return Math.abs(tick.distance - value) < Math.abs(nearest.distance - value) ? tick : nearest;
+      }, null);
+  }
+
   function updateHoverGuide(marker) {
     if (hoveredMarker === marker) {
       return;
@@ -392,6 +438,7 @@ function initVisionScene(mount) {
 
     hoveredMarker = marker;
     clearGroup(hoverGuide);
+    resetAxisHighlights();
 
     if (!marker) {
       return;
@@ -400,24 +447,17 @@ function initVisionScene(mount) {
     marker.scale.setScalar(1.45);
 
     const point = marker.position.clone();
-    const planeProjections = [
-      new THREE.Vector3(point.x, point.y, 0),
-      new THREE.Vector3(point.x, 0, point.z),
-      new THREE.Vector3(0, point.y, point.z),
-    ];
-    const axisProjections = [
-      new THREE.Vector3(point.x, 0, 0),
-      new THREE.Vector3(0, point.y, 0),
-      new THREE.Vector3(0, 0, point.z),
-    ];
+    highlightedAxisTicks = [
+      getNearestAxisTick("x", point.x),
+      getNearestAxisTick("y", point.y),
+      getNearestAxisTick("z", point.z),
+    ].filter(Boolean);
 
-    planeProjections.forEach((projection) => {
-      hoverGuide.add(makeDashedLine(point, projection));
-      hoverGuide.add(makeHighlightDot(projection, 0.07));
-    });
-
-    axisProjections.forEach((projection) => {
-      hoverGuide.add(makeHighlightDot(projection, 0.105, 0xffd166));
+    highlightedAxisTicks.forEach((tick) => {
+      tick.dot.scale.setScalar(1.42);
+      tick.label.scale.copy(tick.baseLabelScale).multiplyScalar(1.22);
+      hoverGuide.add(makeHighlightRing(tick.dot.position, 0.19));
+      hoverGuide.add(makeHighlightFrame(tick.label.position, tick.baseLabelScale));
     });
   }
 
@@ -473,6 +513,9 @@ function initVisionScene(mount) {
 
   function animate() {
     controls.update();
+    hoverGuide.children.forEach((child) => {
+      child.lookAt(camera.position);
+    });
     renderer.render(scene, camera);
     frameId = requestAnimationFrame(animate);
   }

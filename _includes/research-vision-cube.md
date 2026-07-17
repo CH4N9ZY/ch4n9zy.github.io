@@ -1,7 +1,7 @@
 <div class="vision-cube-card" aria-label="Research vision space: Realism, Scale, and Reasoning">
   <div class="vision-cube-copy">
     <h3>Research Vision Space</h3>
-    <p class="vision-three-hint">Drag to rotate · Scroll to zoom · Hover for projections · <span class="vision-hint-publication">Spheres</span> are publications · <span class="vision-hint-project">Cubes</span> are projects</p>
+    <p class="vision-three-hint">Drag to rotate · Scroll to zoom · Hover for axis highlights · <span class="vision-hint-publication">Spheres</span> are publications · <span class="vision-hint-project">Cubes</span> are projects</p>
   </div>
 
   <div class="vision-three-wrap">
