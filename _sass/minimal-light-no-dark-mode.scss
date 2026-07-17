@@ -65,7 +65,7 @@
 
 .home-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 30px;
   align-items: start;
 }
@@ -105,6 +105,289 @@
 .home-news li {
   font-size: 14px;
   line-height: 1.45;
+}
+
+.vision-cube-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(360px, 1.25fr);
+  gap: 24px;
+  align-items: center;
+  margin: 24px 0 30px;
+  padding: 18px;
+  border-left: 4px solid #043361;
+  background: #f7f9fb;
+}
+
+.vision-cube-copy h3 {
+  margin-top: 0;
+}
+
+.vision-cube-copy p {
+  margin-bottom: 0;
+}
+
+.vision-cube-wrap {
+  min-width: 0;
+  overflow: hidden;
+  padding: 12px 8px;
+}
+
+.vision-cube-frame {
+  position: relative;
+  width: min(100%, 560px);
+  height: 360px;
+  margin: 0 auto;
+  color: #043361;
+}
+
+.vision-plane {
+  position: absolute;
+  border: 1px solid rgba(4, 51, 97, 0.3);
+  background: rgba(4, 51, 97, 0.035);
+  pointer-events: none;
+}
+
+.vision-plane-back {
+  left: 104px;
+  top: 42px;
+  width: 280px;
+  height: 210px;
+  transform: skewY(-18deg);
+}
+
+.vision-plane-bottom {
+  left: 104px;
+  top: 252px;
+  width: 280px;
+  height: 76px;
+  transform: skewX(-48deg);
+  transform-origin: top left;
+}
+
+.vision-plane-side {
+  left: 384px;
+  top: 42px;
+  width: 82px;
+  height: 210px;
+  transform: skewY(42deg);
+  transform-origin: top left;
+}
+
+.vision-axis {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.vision-axis::before {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+
+.vision-axis-title {
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.vision-axis-start,
+.vision-axis-mid,
+.vision-axis-end {
+  position: absolute;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.vision-axis-realism {
+  left: 70px;
+  top: 26px;
+  height: 232px;
+  color: #8b2f5f;
+}
+
+.vision-axis-realism::before {
+  left: 34px;
+  top: 32px;
+  width: 3px;
+  height: 208px;
+}
+
+.vision-axis-realism .vision-axis-title {
+  transform: translateX(-16px);
+}
+
+.vision-axis-realism .vision-axis-start {
+  left: -20px;
+  bottom: -4px;
+}
+
+.vision-axis-realism .vision-axis-mid {
+  left: -4px;
+  top: 124px;
+}
+
+.vision-axis-realism .vision-axis-end {
+  left: -16px;
+  top: 34px;
+}
+
+.vision-axis-scale {
+  left: 102px;
+  top: 286px;
+  width: 330px;
+  color: #0a6b63;
+}
+
+.vision-axis-scale::before {
+  left: 0;
+  top: -12px;
+  width: 330px;
+  height: 3px;
+}
+
+.vision-axis-scale .vision-axis-title {
+  position: absolute;
+  right: -6px;
+  top: -40px;
+}
+
+.vision-axis-scale .vision-axis-start {
+  left: 0;
+  top: 0;
+}
+
+.vision-axis-scale .vision-axis-mid {
+  left: 120px;
+  top: 0;
+}
+
+.vision-axis-scale .vision-axis-end {
+  right: 0;
+  top: 0;
+}
+
+.vision-axis-reasoning {
+  left: 392px;
+  top: 252px;
+  width: 132px;
+  color: #7b4f00;
+  transform: rotate(-42deg);
+  transform-origin: left center;
+}
+
+.vision-axis-reasoning::before {
+  left: 0;
+  top: -12px;
+  width: 132px;
+  height: 3px;
+}
+
+.vision-axis-reasoning .vision-axis-title {
+  position: absolute;
+  right: -18px;
+  top: -42px;
+}
+
+.vision-axis-reasoning .vision-axis-start {
+  left: 0;
+  top: 0;
+}
+
+.vision-axis-reasoning .vision-axis-mid {
+  left: 46px;
+  top: 0;
+}
+
+.vision-axis-reasoning .vision-axis-end {
+  right: -10px;
+  top: 0;
+}
+
+.vision-node {
+  position: absolute;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  min-height: 34px;
+  padding: 6px 8px;
+  border: 1px solid rgba(4, 51, 97, 0.28);
+  border-radius: 6px;
+  color: #222;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 8px 18px rgba(4, 51, 97, 0.13);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.node-synthesis {
+  left: 122px;
+  top: 204px;
+}
+
+.node-contact {
+  left: 210px;
+  top: 150px;
+}
+
+.node-multi {
+  left: 262px;
+  top: 214px;
+}
+
+.node-attack {
+  left: 164px;
+  top: 78px;
+}
+
+.node-crowd {
+  left: 338px;
+  top: 112px;
+}
+
+.node-hri {
+  left: 382px;
+  top: 188px;
+}
+
+.vision-frame-label {
+  position: absolute;
+  z-index: 3;
+  padding: 3px 7px;
+  border: 1px solid rgba(4, 51, 97, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #043361;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.vision-frame-label-top {
+  left: 226px;
+  top: 8px;
+}
+
+.vision-frame-label-right {
+  right: 22px;
+  top: 150px;
+}
+
+.vision-frame-label-bottom {
+  left: 234px;
+  bottom: 8px;
+}
+
+.vision-frame-label-left {
+  left: 12px;
+  top: 150px;
 }
 
 .fellowship-card {
@@ -274,6 +557,54 @@
   .home-layout {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .vision-cube-card {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-cube-frame {
+    height: 420px;
+  }
+
+  .vision-plane,
+  .vision-axis::before {
+    display: none;
+  }
+
+  .vision-axis,
+  .vision-node,
+  .vision-frame-label {
+    position: static;
+    transform: none;
+  }
+
+  .vision-cube-frame {
+    display: grid;
+    gap: 10px;
+    height: auto;
+  }
+
+  .vision-axis {
+    display: grid;
+    gap: 6px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+  }
+
+  .vision-axis-title,
+  .vision-axis-start,
+  .vision-axis-mid,
+  .vision-axis-end {
+    position: static !important;
+    transform: none !important;
+  }
+
+  .vision-node {
+    width: auto;
   }
 
   .experience-card {
@@ -693,6 +1024,10 @@ footer {
     gap: 18px;
   }
 
+  .vision-cube-card {
+    grid-template-columns: 1fr;
+  }
+
   .pub-row {
   display: flex;
   align-items: center;}
@@ -860,9 +1195,16 @@ html[data-theme="light"] .theme-toggle {
 }
 
 html[data-theme="light"] .fellowship-card,
-html[data-theme="light"] .home-sidebar-section {
+html[data-theme="light"] .home-sidebar-section,
+html[data-theme="light"] .vision-cube-card {
   border-left-color: #043361;
   background: #f7f9fb;
+}
+
+html[data-theme="light"] .vision-node,
+html[data-theme="light"] .vision-frame-label {
+  color: #222;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 html[data-theme="light"] .experience-card {
@@ -937,9 +1279,22 @@ html[data-theme="dark"] .theme-toggle {
 }
 
 html[data-theme="dark"] .fellowship-card,
-html[data-theme="dark"] .home-sidebar-section {
+html[data-theme="dark"] .home-sidebar-section,
+html[data-theme="dark"] .vision-cube-card {
   border-left-color: rgb(62, 183, 240);
   background: #282a36;
+}
+
+html[data-theme="dark"] .vision-plane {
+  border-color: rgba(156, 198, 255, 0.28);
+  background: rgba(156, 198, 255, 0.05);
+}
+
+html[data-theme="dark"] .vision-node,
+html[data-theme="dark"] .vision-frame-label {
+  color: #f4f4f4;
+  background: rgba(36, 38, 49, 0.92);
+  border-color: rgba(156, 198, 255, 0.3);
 }
 
 html[data-theme="dark"] .experience-card {

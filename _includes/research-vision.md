@@ -2,6 +2,8 @@
 
 My long-term research vision is to build data-informed models of virtual humans, embodied agents, and dense crowds that can explain, generate, and reason about interaction in shared environments.
 
+{% include research-vision-cube.md %}
+
 <div class="experience-list">
   <div class="experience-card">
     <div class="experience-badge">Vision 1</div>
