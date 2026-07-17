@@ -20,42 +20,44 @@ layout: homepage
 
 ## About Me
 
-I am a Postdoctoral Researcher at Inria Rennes and an incoming Bienvenüe+ MSCA-COFUND Fellow. My research develops computational models for socially intelligent virtual humans and embodied agents, with a focus on multi-character interaction, crowd behaviour, generative human motion, and human-robot interaction.
+I am a Postdoctoral Researcher at Inria Rennes and an incoming Bienvenüe+ MSCA-COFUND Fellow. My research develops computational models for socially intelligent virtual humans, embodied agents, and dense crowds, with a focus on multi-character interaction, crowd dynamics, generative motion modelling, and human-centred AI.
 
-My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme that I developed on socially intelligent multi-agent motion generation, building on my previous work in multi-character interaction synthesis and generative human motion.
+My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme that I proposed and developed: <strong>GROWD: Generative Modelling of Dense Crowds under Multiscale Observations</strong>. The project builds on my previous work in multi-character interaction synthesis and generative human motion, extending it toward probabilistic, data-informed modelling of dense crowd dynamics.
 
 <div class="fellowship-card">
-  <h3>Bienvenüe+ MSCA-COFUND Fellowship</h3>
+  <h3>GROWD: Bienvenüe+ MSCA-COFUND Fellowship</h3>
   <figure class="fellowship-figure">
     <img src="./assets/img/bienvenue_plus_funding.jpg" alt="Bienvenüe+ MSCA-COFUND Fellowship funding information">
   </figure>
-  <p>I have been selected as an incoming Bienvenüe+ MSCA-COFUND Fellow for a 24-month independent research programme hosted at Inria Rennes.</p>
+  <p>I have been selected as an incoming Bienvenüe+ MSCA-COFUND Fellow for a 24-month independent research programme hosted by the VirtUs team at Inria Rennes.</p>
   <ul>
-    <li><strong>Research direction:</strong> Socially intelligent multi-agent motion generation</li>
+    <li><strong>Project title:</strong> Generative Modelling of Dense Crowds under Multiscale Observations</li>
+    <li><strong>Acronym:</strong> GROWD</li>
+    <li><strong>Research direction:</strong> Dense crowd modelling · Generative models · Crowd dynamics</li>
     <li><strong>Host institution:</strong> Inria Rennes</li>
     <li><strong>Host team:</strong> VirtUs</li>
-    <li><strong>Research areas:</strong> Multi-character interaction · Crowd modelling · Generative AI · Embodied agents</li>
   </ul>
   <p>Bienvenüe+ is an international postdoctoral fellowship programme co-funded by the European Union's Horizon Europe Marie Skłodowska-Curie Actions COFUND programme, Région Bretagne, and participating host institutions.</p>
+  <p><a href="#projects" data-section-target="projects">View the GROWD project overview</a></p>
 </div>
 
 <div class="fellowship-card">
   <h3>For Prospective Collaboration</h3>
-  <p>I welcome collaborations on socially intelligent virtual humans, multi-agent motion generation, character animation, crowd behaviour, human-robot interaction, and trustworthy embodied AI.</p>
-  <p>I am especially interested in projects that connect generative motion models with interactive, physically grounded, and socially aware agents in shared human environments.</p>
+  <p>I welcome collaborations on dense crowd modelling, generative models for crowd dynamics, multiscale motion observation, character animation, human-robot interaction, public-space safety, and trustworthy embodied AI.</p>
+  <p>I am especially interested in projects that connect fine-grained human motion, coarse-grained video observations, probabilistic generative modelling, and domain expertise from event organisation or urban planning for safer and more interpretable analysis of shared public spaces.</p>
 </div>
 
 ## Research Interests
 
-- **Research Vision:** Socially intelligent virtual humans and embodied agents
-- **Core Themes:** Multi-character interaction, crowd behaviour, human-robot and human-agent interaction
-- **Methods:** Generative and diffusion models, spatio-temporal representation learning, physics-based and data-driven animation
+- **Research Vision:** Data-informed generative models for virtual humans, embodied agents, and dense crowds
+- **Core Themes:** Dense crowd dynamics, multi-character interaction, crowd-aware behaviour, human-robot and human-agent interaction
+- **Methods:** Generative and diffusion models, multiscale representation learning, probabilistic modelling, physics-based and data-driven animation
 
 ## News
 
 <ul>
   <!-- <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li> -->
-  <li><b>[July 2026]</b> I have been selected as an incoming <a style="color: rgb(252, 151, 0)"><b>Bienvenüe+ MSCA-COFUND Fellow</b></a> for a 24-month independent research programme at Inria Rennes.</li>
+  <li><b>[July 2026]</b> I have been selected as an incoming <a style="color: rgb(252, 151, 0)"><b>Bienvenüe+ MSCA-COFUND Fellow</b></a> for <b>GROWD</b>, a 24-month independent research programme on generative modelling of dense crowds under multiscale observations at Inria Rennes.</li>
   <li><b>[May 2026]</b> Our paper about adversarial attack on human motions is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE TCSVT</b></a>.</li>
   <li><b>[Feb. 2026]</b> Our paper about human-robot interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE ICHMS 2026</b></a>.</li>
   <li><b>[Mar. 2026]</b> I joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctoral researcher.</li>
