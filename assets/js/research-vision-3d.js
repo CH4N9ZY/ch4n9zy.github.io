@@ -8,6 +8,7 @@ const axisColor = 0x0b587b;
 const dotColor = 0x177392;
 const publicationColor = 0xf59f00;
 const projectColor = 0x6c63ff;
+const projectionColor = 0x12a8d8;
 
 const researchItems = [
   {
@@ -220,6 +221,59 @@ function makeResearchMarker(item) {
   return marker;
 }
 
+function disposeObject(object) {
+  if (object.geometry) {
+    object.geometry.dispose();
+  }
+  if (object.material) {
+    const materials = Array.isArray(object.material) ? object.material : [object.material];
+    materials.forEach((material) => {
+      if (material.map) {
+        material.map.dispose();
+      }
+      material.dispose();
+    });
+  }
+}
+
+function clearGroup(group) {
+  while (group.children.length > 0) {
+    const child = group.children.pop();
+    child.traverse(disposeObject);
+  }
+}
+
+function makeDashedLine(start, end) {
+  const geometry = new THREE.BufferGeometry().setFromPoints([start, end]);
+  const material = new THREE.LineDashedMaterial({
+    color: projectionColor,
+    dashSize: 0.08,
+    gapSize: 0.055,
+    transparent: true,
+    opacity: isDarkTheme() ? 0.86 : 0.74,
+    depthTest: false,
+  });
+  const line = new THREE.Line(geometry, material);
+  line.computeLineDistances();
+  line.renderOrder = 10;
+  return line;
+}
+
+function makeHighlightDot(position, radius, color = projectionColor) {
+  const dot = new THREE.Mesh(
+    new THREE.SphereGeometry(radius, 24, 12),
+    new THREE.MeshBasicMaterial({
+      color,
+      transparent: true,
+      opacity: 0.96,
+      depthTest: false,
+    })
+  );
+  dot.position.copy(position);
+  dot.renderOrder = 11;
+  return dot;
+}
+
 function initVisionScene(mount) {
   if (mount.visionDispose) {
     mount.visionDispose();
@@ -257,6 +311,7 @@ function initVisionScene(mount) {
   const root = new THREE.Group();
   scene.add(root);
   const interactiveObjects = [];
+  const hoverGuide = new THREE.Group();
 
   const trustworthyPlane = makePlane(3.7, 3.2, 0xfff1a9, isDarkTheme() ? 0.16 : 0.34);
   trustworthyPlane.position.set(0, 1.72, 1.75);
@@ -282,6 +337,8 @@ function initVisionScene(mount) {
     interactiveObjects.push(marker);
   });
 
+  root.add(hoverGuide);
+
   const trustworthyLabel = makeTextSprite("Trustworthy", { fontSize: 40, fontWeight: 800, scale: 0.38 });
   trustworthyLabel.position.set(-0.18, 2.15, 2.95);
   root.add(trustworthyLabel);
@@ -298,6 +355,7 @@ function initVisionScene(mount) {
   const pointer = new THREE.Vector2();
   const pointerStart = new THREE.Vector2();
   let activePointerId = null;
+  let hoveredMarker = null;
 
   function setPointerFromEvent(event) {
     const rect = renderer.domElement.getBoundingClientRect();
@@ -323,6 +381,46 @@ function initVisionScene(mount) {
     }
   }
 
+  function updateHoverGuide(marker) {
+    if (hoveredMarker === marker) {
+      return;
+    }
+
+    if (hoveredMarker) {
+      hoveredMarker.scale.setScalar(1);
+    }
+
+    hoveredMarker = marker;
+    clearGroup(hoverGuide);
+
+    if (!marker) {
+      return;
+    }
+
+    marker.scale.setScalar(1.45);
+
+    const point = marker.position.clone();
+    const planeProjections = [
+      new THREE.Vector3(point.x, point.y, 0),
+      new THREE.Vector3(point.x, 0, point.z),
+      new THREE.Vector3(0, point.y, point.z),
+    ];
+    const axisProjections = [
+      new THREE.Vector3(point.x, 0, 0),
+      new THREE.Vector3(0, point.y, 0),
+      new THREE.Vector3(0, 0, point.z),
+    ];
+
+    planeProjections.forEach((projection) => {
+      hoverGuide.add(makeDashedLine(point, projection));
+      hoverGuide.add(makeHighlightDot(projection, 0.07));
+    });
+
+    axisProjections.forEach((projection) => {
+      hoverGuide.add(makeHighlightDot(projection, 0.105, 0xffd166));
+    });
+  }
+
   function resize() {
     const width = mount.clientWidth || 620;
     const height = mount.clientHeight || 520;
@@ -345,6 +443,7 @@ function initVisionScene(mount) {
     const hit = getIntersectedItem(event);
     renderer.domElement.style.cursor = hit ? "pointer" : "grab";
     mount.setAttribute("title", hit ? hit.object.userData.title : "Drag to rotate · Scroll to zoom");
+    updateHoverGuide(hit ? hit.object : null);
   });
 
   renderer.domElement.addEventListener("pointerup", (event) => {
@@ -367,6 +466,7 @@ function initVisionScene(mount) {
   renderer.domElement.addEventListener("pointerleave", () => {
     renderer.domElement.style.cursor = "grab";
     mount.removeAttribute("title");
+    updateHoverGuide(null);
   });
 
   let frameId = null;
