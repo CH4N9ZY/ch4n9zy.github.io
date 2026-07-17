@@ -160,22 +160,6 @@ function initVisionScene(mount) {
   root.add(makeAxis(new THREE.Vector3(0, 1, 0), axisLength, "Realism", ["Kinematics", "Physics", "Embodiment"]));
   root.add(makeAxis(new THREE.Vector3(0, 0, 1), axisLength, "Reasoning", ["Generation", "Understanding", "Intervention"]));
 
-  const core = new THREE.Mesh(
-    new THREE.SphereGeometry(0.14, 32, 16),
-    new THREE.MeshBasicMaterial({ color: 0x043361 })
-  );
-  root.add(core);
-
-  const coreLabel = makeTextSprite("Human Motion Intelligence", {
-    fontSize: 30,
-    fontWeight: 700,
-    textColor: isDarkTheme() ? "#f4f4f4" : "#043361",
-    backgroundColor: isDarkTheme() ? "rgba(36,38,49,0.82)" : "rgba(255,255,255,0.82)",
-    scale: 0.34,
-  });
-  coreLabel.position.set(1.38, 0.42, 0.2);
-  root.add(coreLabel);
-
   const trustworthyLabel = makeTextSprite("Trustworthy", { fontSize: 40, fontWeight: 800, scale: 0.38 });
   trustworthyLabel.position.set(-0.18, 2.15, 2.95);
   root.add(trustworthyLabel);

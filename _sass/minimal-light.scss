@@ -108,10 +108,6 @@
 }
 
 .vision-cube-card {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.75fr) minmax(360px, 1.25fr);
-  gap: 24px;
-  align-items: center;
   margin: 24px 0 30px;
   padding: 18px;
   border-left: 4px solid #043361;
@@ -126,14 +122,27 @@
   margin-bottom: 0;
 }
 
+.vision-three-hint {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.vision-three-caption {
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .vision-three-wrap {
   min-width: 0;
+  margin-top: 12px;
 }
 
 .vision-three-stage {
   position: relative;
   width: 100%;
-  height: 430px;
+  height: 520px;
   overflow: hidden;
   border: 1px solid rgba(4, 51, 97, 0.12);
   border-radius: 8px;
@@ -2152,6 +2161,10 @@ html[data-theme="dark"] .vision-three-stage {
 
 html[data-theme="dark"] .vision-three-fallback {
   color: #f4f4f4;
+}
+
+html[data-theme="dark"] .vision-three-hint {
+  color: #b9beca;
 }
 
 html[data-theme="dark"] .vision-plane {
