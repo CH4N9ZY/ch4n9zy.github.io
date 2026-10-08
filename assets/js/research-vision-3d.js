@@ -520,12 +520,32 @@ function initVisionScene(mount) {
     frameId = requestAnimationFrame(animate);
   }
 
-  animate();
+  function startAnimation() {
+    if (frameId === null) {
+      animate();
+    }
+  }
 
-  mount.visionDispose = function disposeVisionScene() {
+  function stopAnimation() {
     if (frameId !== null) {
       cancelAnimationFrame(frameId);
+      frameId = null;
     }
+  }
+
+  // Only render while the canvas is on screen; hidden tabs and scrolled-away views stay idle.
+  const visibilityObserver = new IntersectionObserver((entries) => {
+    if (entries.some((entry) => entry.isIntersecting)) {
+      startAnimation();
+    } else {
+      stopAnimation();
+    }
+  });
+  visibilityObserver.observe(mount);
+
+  mount.visionDispose = function disposeVisionScene() {
+    stopAnimation();
+    visibilityObserver.disconnect();
     window.removeEventListener("resize", resize);
     resizeObserver.disconnect();
     controls.dispose();
@@ -549,10 +569,16 @@ function initVisionScene(mount) {
 
 mounts.forEach(initVisionScene);
 
-const themeObserver = new MutationObserver((mutations) => {
-  if (mutations.some((mutation) => mutation.attributeName === "data-theme")) {
+let renderedDarkTheme = isDarkTheme();
+
+// Rebuild only when the effective theme changes, not on every data-theme write
+// (section-tabs.js re-applies the same theme on load).
+const themeObserver = new MutationObserver(() => {
+  const darkTheme = isDarkTheme();
+  if (darkTheme !== renderedDarkTheme) {
+    renderedDarkTheme = darkTheme;
     mounts.forEach(initVisionScene);
   }
 });
 
-themeObserver.observe(document.documentElement, { attributes: true });
+themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

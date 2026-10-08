@@ -59,8 +59,8 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
   <!-- <li><b>[Pinned]</b> I'm <a style="color: rgb(252, 151, 0)"><b>open to work</b></a> now.</li> -->
   <li><b>[July 2026]</b> I have been selected as an incoming <a style="color: rgb(252, 151, 0)"><b>Bienvenüe+ MSCA-COFUND Fellow</b></a> for <b>GROWD</b>, a 24-month independent research programme on generative modelling of dense crowds under multiscale observations at Inria Rennes.</li>
   <li><b>[May 2026]</b> Our paper about adversarial attack on human motions is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE TCSVT</b></a>.</li>
-  <li><b>[Feb. 2026]</b> Our paper about human-robot interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE ICHMS 2026</b></a>.</li>
   <li><b>[Mar. 2026]</b> I joined Virtus team led by <a href="https://scholar.google.com/citations?user=2Ophoa4AAAAJ&hl=en" target="_blank">Julien Pettre</a> at Inria Rennes as a postdoctoral researcher.</li>
+  <li><b>[Feb. 2026]</b> Our paper about human-robot interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>IEEE ICHMS 2026</b></a>.</li>
   <li><b>[Feb. 2026]</b> Our paper about physics-based two-character interaction is accepted by <a style="color: rgb(252, 151, 0)"><b>Eurographics 2026</b></a>.</li>
   <li><b>[Sept. 2025]</b> I've successfully passed PhD viva</li>
   <li><b>[Aug. 2025]</b> Our paper about two-character interaction in-between is accepted by <a style="color: rgb(252, 151, 0)"><b>SIGGRAPH Asia 2025</b></a>.</li>
@@ -89,7 +89,7 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
     <li><b>[Dec. 2022]</b> Our paper about stylized motion generation with diffusion models is accepted by <a style="color: rgb(252, 151, 0)"><b>GRAPP 2023</b></a>.</li>
     <li><b>[Oct. 2022]</b> Our paper about stylized 3D shape generation by transferring learning is accepted by <a style="color: rgb(252, 151, 0)"><b>VRST 2022</b></a>.</li>
     <li><b>[Oct. 2022]</b> I am involved in the teaching of Programming (Gold), Data Science, and Computational Thinking as Demonstrator.</li>
-    <li><b>[Sept. 2024]</b> Our paper about stylized locomotion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>MIG 2022</b></a>.</li>
+    <li><b>[Sept. 2022]</b> Our paper about stylized locomotion synthesis is accepted by <a style="color: rgb(252, 151, 0)"><b>MIG 2022</b></a>.</li>
     <li><b>[Aug. 2022]</b> I work as <a style="color: rgb(252, 151, 0)"><b>Supporting Chair</b></a> of <a href="https://computeranimation.org/2022/people.html" target="_blank">the 21st ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA 2022)</a>.</li>
     <li><b>[Jan. 2022]</b> I am involved in the teaching of Programming for Data Science as Demonstrator.</li>
 </details>
