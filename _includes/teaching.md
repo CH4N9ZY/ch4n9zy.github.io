@@ -22,10 +22,10 @@
       <h4>Final Year Project Supervision</h4>
       <p>Co-supervised undergraduate student Edmund with <a href="http://hubertshum.com/" target="_blank">Prof. Hubert P. H. Shum</a> on stylized human motion generation.</p>
       <ul>
+        <li>The project explored denoising diffusion probabilistic models for stylized human walking synthesis; I supported the project direction, experiment design, and paper development.</li>
         <li>The project led to the paper <a href="#pub-denoising-diffusion-probabilistic-models-for-styled-walking-synthesis" data-publication-target="pub-denoising-diffusion-probabilistic-models-for-styled-walking-synthesis"><b>Denoising Diffusion Probabilistic Models for Styled Walking Synthesis</b></a>.</li>
         <li>The work connects undergraduate research supervision with my broader interests in generative human motion and character animation.</li>
       </ul>
-      <p><a href="#project-final-year-styled-walking">View the final-year project overview</a></p>
     </div>
   </div>
 

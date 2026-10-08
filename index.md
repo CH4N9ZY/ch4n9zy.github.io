@@ -2,18 +2,7 @@
 layout: homepage
 ---
 
-<nav class="section-nav" aria-label="Homepage sections">
-  <a href="#home" class="section-nav-link is-active" data-section-target="home">Home</a>
-  <a href="#vision" class="section-nav-link" data-section-target="vision">Research Vision</a>
-  <a href="#publication" class="section-nav-link" data-section-target="publication">Publication</a>
-  <a href="#projects" class="section-nav-link" data-section-target="projects">Projects</a>
-  <a href="#grants" class="section-nav-link" data-section-target="grants">Grants & Funding</a>
-  <a href="#teaching" class="section-nav-link" data-section-target="teaching">Supervision & Teaching</a>
-  <a href="#service" class="section-nav-link" data-section-target="service">Talks & Service</a>
-  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
-    <i class="fa-solid fa-moon" aria-hidden="true"></i>
-  </button>
-</nav>
+{% include section-nav.html active="home" %}
 
 <div class="homepage-panels">
   <div id="home" class="homepage-panel is-active" data-section-panel="home" markdown="1">
@@ -22,29 +11,11 @@ layout: homepage
 
 I am a Postdoctoral Researcher at Inria Rennes and an incoming Bienvenüe+ MSCA-COFUND Fellow. My research develops computational models for socially intelligent virtual humans, embodied agents, and dense crowds, with a focus on multi-character interaction, crowd dynamics, generative motion modelling, and human-centred AI.
 
-My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme that I proposed and developed: <strong>GROWD: Generative Modelling of Dense Crowds under Multiscale Observations</strong>. The project builds on my previous work in multi-character interaction synthesis and generative human motion, extending it toward probabilistic, data-informed modelling of dense crowd dynamics.
-
-<div class="fellowship-card">
-  <h3>GROWD: Bienvenüe+ MSCA-COFUND Fellowship</h3>
-  <figure class="fellowship-figure">
-    <img src="./assets/img/bienvenue_plus_funding.jpg" alt="Bienvenüe+ MSCA-COFUND Fellowship funding information">
-  </figure>
-  <p>I have been selected as an incoming Bienvenüe+ MSCA-COFUND Fellow for a 24-month independent research programme hosted by the VirtUs team at Inria Rennes.</p>
-  <ul>
-    <li><strong>Project title:</strong> Generative Modelling of Dense Crowds under Multiscale Observations</li>
-    <li><strong>Acronym:</strong> GROWD</li>
-    <li><strong>Research direction:</strong> Dense crowd modelling · Generative models · Crowd dynamics</li>
-    <li><strong>Host institution:</strong> Inria Rennes</li>
-    <li><strong>Host team:</strong> VirtUs</li>
-  </ul>
-  <p>Bienvenüe+ is an international postdoctoral fellowship programme co-funded by the European Union's Horizon Europe Marie Skłodowska-Curie Actions COFUND programme, Région Bretagne, and participating host institutions.</p>
-  <p><a href="#projects" data-section-target="projects">View the GROWD project overview</a></p>
-</div>
+From November 2026, I will lead <a href="{{ '/projects/growd/' | relative_url }}"><strong>GROWD</strong></a> (Generative Modelling of Dense Crowds under Multiscale Observations), a 24-month Bienvenüe+ MSCA-COFUND Fellowship project hosted by the VirtUs team at Inria Rennes. The project extends my previous work in multi-character interaction synthesis and generative human motion toward probabilistic, data-informed modelling of dense crowd dynamics.
 
 <div class="fellowship-card">
   <h3>For Prospective Collaboration</h3>
   <p>I welcome collaborations on dense crowd modelling, generative models for crowd dynamics, multiscale motion observation, character animation, human-robot interaction, public-space safety, and trustworthy embodied AI.</p>
-  <p>I am especially interested in projects that connect fine-grained human motion, coarse-grained video observations, probabilistic generative modelling, and domain expertise from event organisation or urban planning for safer and more interpretable analysis of shared public spaces.</p>
 </div>
 
 ## Research Interests
@@ -142,13 +113,7 @@ My Bienvenüe+ MSCA-COFUND Fellowship supports an independent research programme
 
   <div id="grants" class="homepage-panel" data-section-panel="grants" markdown="1">
 
-{% include_relative _includes/projects.md %}
-
-  </div>
-
-  <div id="projects" class="homepage-panel" data-section-panel="projects" markdown="1">
-
-{% include_relative _includes/research-projects.md %}
+{% include_relative _includes/grants.md %}
 
   </div>
 

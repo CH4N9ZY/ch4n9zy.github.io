@@ -226,6 +226,37 @@
   margin: 0 0 0 18px;
 }
 
+.experience-card {
+  scroll-margin-top: 88px;
+}
+
+.experience-more {
+  font-weight: 700;
+}
+
+.project-back {
+  margin: 0 0 18px;
+}
+
+.project-title {
+  margin: 12px 0 16px;
+}
+
+.project-facts {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 18px;
+}
+
+.project-facts dt {
+  margin: 0;
+  font-weight: 700;
+}
+
+.project-facts dd {
+  margin: 0;
+}
+
 .publication-heading {
   margin: 0 0 14px;
   font-size: 180%;
@@ -363,6 +394,15 @@
   .experience-badge {
     justify-content: flex-start;
     width: fit-content;
+  }
+
+  .project-facts {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .project-facts dd {
+    margin-bottom: 8px;
   }
 
   .section-nav {

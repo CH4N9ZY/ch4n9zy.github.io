@@ -7,7 +7,7 @@
       <h4>Conference Organisation</h4>
       <p>Supporting Chair of <a href="https://computeranimation.org/2022/people.html" target="_blank">the 21st ACM SIGGRAPH / Eurographics Symposium on Computer Animation</a> (SCA 2022).</p>
       <figure class="funding-figure">
-        <img src="../assets/img/sca2022supportingchair.png" alt="SCA 2022 supporting chair information">
+        <img src="{{ '/assets/img/sca2022supportingchair.png' | relative_url }}" alt="SCA 2022 supporting chair information">
       </figure>
       <ul>
         <li>Led a 7-person support team.</li>

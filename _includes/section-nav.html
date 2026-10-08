@@ -1,0 +1,12 @@
+{% assign home_url = "/" | relative_url %}
+<nav class="section-nav" aria-label="Homepage sections">
+  <a href="{{ home_url }}#home" class="section-nav-link{% if include.active == 'home' %} is-active{% endif %}" data-section-target="home">Home</a>
+  <a href="{{ home_url }}#vision" class="section-nav-link{% if include.active == 'vision' %} is-active{% endif %}" data-section-target="vision">Research Vision</a>
+  <a href="{{ home_url }}#publication" class="section-nav-link{% if include.active == 'publication' %} is-active{% endif %}" data-section-target="publication">Publication</a>
+  <a href="{{ home_url }}#grants" class="section-nav-link{% if include.active == 'grants' %} is-active{% endif %}" data-section-target="grants">Grants & Funding</a>
+  <a href="{{ home_url }}#teaching" class="section-nav-link{% if include.active == 'teaching' %} is-active{% endif %}" data-section-target="teaching">Supervision & Teaching</a>
+  <a href="{{ home_url }}#service" class="section-nav-link{% if include.active == 'service' %} is-active{% endif %}" data-section-target="service">Talks & Service</a>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark mode">
+    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+  </button>
+</nav>

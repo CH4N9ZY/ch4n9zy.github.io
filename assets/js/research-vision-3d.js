@@ -80,19 +80,19 @@ const researchItems = [
   {
     kind: "project",
     title: "GROWD Fellowship",
-    href: "#project-growd",
+    href: "/projects/growd/",
     position: [3.78, 1.45, 3.7],
   },
   {
     kind: "project",
     title: "SMU-DU Human-Robot Interaction Project",
-    href: "#project-smu-du",
+    href: "/projects/smu-du/",
     position: [2.68, 2.72, 2.58],
   },
   {
     kind: "project",
     title: "Final Year Project: Styled Walking Synthesis",
-    href: "#project-final-year-styled-walking",
+    href: "#supervision-final-year-styled-walking",
     position: [0.92, 0.95, 1.38],
   },
 ];
@@ -400,10 +400,13 @@ function initVisionScene(mount) {
       return;
     }
 
-    if (window.location.hash === marker.userData.href) {
+    const href = marker.userData.href;
+    if (href.charAt(0) !== "#") {
+      window.location.href = href;
+    } else if (window.location.hash === href) {
       window.dispatchEvent(new Event("hashchange"));
     } else {
-      window.location.hash = marker.userData.href;
+      window.location.hash = href;
     }
   }
 

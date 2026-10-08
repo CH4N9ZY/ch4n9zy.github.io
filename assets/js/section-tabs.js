@@ -1,6 +1,10 @@
 function activateHomepageSection(sectionName) {
   const section = sectionName || "home";
   const panels = document.querySelectorAll("[data-section-panel]");
+  // Project pages have no panels; their nav keeps the active state set by the layout.
+  if (panels.length === 0) {
+    return;
+  }
   const navLinks = document.querySelectorAll(".section-nav [data-section-target]");
 
   panels.forEach((panel) => {
@@ -54,13 +58,25 @@ function getInitialTheme() {
   return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 }
 
+// Anchors from the removed Projects tab (#project-*) now point to the matching cards.
+const legacyProjectAnchors = {
+  "project-final-year-styled-walking": "supervision-final-year-styled-walking",
+};
+
+function redirectLegacyProjectAnchor() {
+  const anchorId = window.location.hash.replace("#", "");
+  if (anchorId.indexOf("project-") !== 0) {
+    return;
+  }
+
+  const target = legacyProjectAnchors[anchorId] || anchorId.replace("project-", "funding-");
+  history.replaceState(null, "", `#${target}`);
+}
+
 function getHomepageSectionFromHash() {
   const section = window.location.hash.replace("#", "");
   if (section.indexOf("pub-") === 0) {
     return "publication";
-  }
-  if (section.indexOf("project-") === 0) {
-    return "projects";
   }
   if (section.indexOf("funding-") === 0) {
     return "grants";
@@ -191,6 +207,7 @@ function initPublicationControls() {
 
 document.addEventListener("DOMContentLoaded", () => {
   setTheme(getInitialTheme());
+  redirectLegacyProjectAnchor();
   activateHomepageSection(getHomepageSectionFromHash());
   initPublicationControls();
 
@@ -208,8 +225,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll("[data-section-target]").forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault();
       const section = link.dataset.sectionTarget;
+      if (!document.querySelector(`[data-section-panel="${section}"]`)) {
+        return;
+      }
+      event.preventDefault();
       activateHomepageSection(section);
       history.pushState(null, "", `#${section}`);
     });
@@ -225,6 +245,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("hashchange", () => {
+  redirectLegacyProjectAnchor();
   activateHomepageSection(getHomepageSectionFromHash());
   const anchorId = window.location.hash.replace("#", "");
   if (anchorId.indexOf("pub-") === 0) {

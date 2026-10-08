@@ -1,0 +1,32 @@
+---
+layout: homepage
+---
+{% include section-nav.html active="grants" %}
+
+<article class="project-page">
+  <p class="project-back">
+    <a href="{{ '/' | relative_url }}#grants"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Grants &amp; Funding</a>
+  </p>
+
+  {% if page.badge %}
+  <div class="experience-badge">{{ page.badge }}</div>
+  {% endif %}
+  <h2 class="project-title">{{ page.title }}</h2>
+
+  {% if page.facts %}
+  <dl class="fellowship-card project-facts">
+    {% for fact in page.facts %}
+    <dt>{{ fact.label }}</dt>
+    <dd>{{ fact.value }}</dd>
+    {% endfor %}
+  </dl>
+  {% endif %}
+
+  {% if page.image %}
+  <figure class="{{ page.image_class | default: 'funding-figure' }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt }}">
+  </figure>
+  {% endif %}
+
+  {{ content }}
+</article>
