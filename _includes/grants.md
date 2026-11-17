@@ -8,8 +8,7 @@
       <p>Bienvenüe+ MSCA-COFUND Fellowship supporting a 24-month independent research programme that I proposed and developed, hosted by the VirtUs team at Inria Rennes.</p>
       <ul>
         <li>Funder: Région Bretagne (Bienvenüe+ MSCA-COFUND)</li>
-        <li>Period: Nov 2026 – Oct 2028</li>
-        <li>Total funding: €131,760</li>
+        <li>Period: 2026 – 2028</li>
         <li>Role: Project Lead / Research Fellow</li>
       </ul>
       <p class="experience-more"><a href="{{ '/projects/growd/' | relative_url }}">View project details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></p>
