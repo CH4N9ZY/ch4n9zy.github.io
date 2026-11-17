@@ -17,9 +17,7 @@ facts:
   - label: Role
     value: Project Lead / Research Fellow
   - label: Period
-    value: Nov 2026 – Oct 2028 (24 months)
-  - label: Total funding
-    value: €131,760
+    value: 2026 – 2028 (24 months)
 ---
 
 ### Overview
